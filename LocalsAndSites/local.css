@@ -1,0 +1,488 @@
+@import url(../css/colors.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    user-select: none;
+}
+
+/*==== Scroll Personalizado ====*/
+::-webkit-scrollbar{
+	width: .5vw;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, var(--green), var(--light-gray));
+	border-radius: 6px;
+	transition: .6s ease-in;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10vh;
+    padding-left: 5vw;
+    padding-right: 4.5vw;
+
+    border-bottom: 4px solid var(--green);
+    box-shadow: 0px 3px 8px rgba(3, 160, 69, 0.6);
+}
+
+header > svg {
+    cursor: pointer;
+}
+
+header > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header > div img {
+    height: 85%;
+}
+
+header > div h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-blue);
+    text-shadow: 0px 3px 1px var(--dark-blue);
+
+    color: white;
+}
+
+/* Menu */ 
+.menu {
+    position:absolute;
+    justify-content: right;
+    right: 3vw;
+    top: 3%;
+    padding: 1vw;
+    width: 18vw;
+    height: 90vh;
+    filter: drop-shadow(-8px 8px 0px rgba(0, 0, 0, 0.3));
+    border-radius: 15px;
+    background-color: var(--green);
+    transition: .5s;
+    z-index: 100;
+}
+
+.menuIsOpen {
+    visibility: visible;
+    height: 90vh;
+    opacity: 1;
+}
+
+.menuIsClose {
+    visibility: hidden;
+    height: 0vh;
+    opacity: 0;
+}
+
+.menu .close {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.close svg {
+    cursor: pointer;
+}
+
+.menu a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    height: 9%;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menu a:hover {
+    background-color: #25cf6ca8;
+}
+
+.menu a h2 {
+    margin-left: 10px;
+}
+
+/*Menu*/
+
+#Local h1{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-left: 5%;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.localandsite{
+    padding: 30px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.localandsite:hover{
+   background-color: #03a0447c;
+   transition: .4s ease-in;
+}
+
+.imglocal img{
+    width: 75%;
+}
+
+.localtxt{
+    width: 80%;
+}
+
+.localtxt h2{
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+}
+
+.localtxt p{
+    color:var(--dark-gray);
+}
+
+.localcontact{
+    margin-top: 10px;
+}
+
+.localadress {
+    display: flex;
+    color: var(--green);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.localadress i{
+    color: var(--green);
+    font-size: 25px;
+}
+
+.localadress p{
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--green);
+    margin-left: 10px;
+}
+
+.linkadress a{
+    display: flex;
+    color: var(--green);
+    margin-top: 10px;
+}
+
+.linkadress a p{
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--green);
+    margin-left: 10px;
+}
+
+.buttonlocal{
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 140px;
+    height: 1.4rem;
+    background-color: var(--green);
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.buttonlocal:hover{
+    background-color: var(--dark-blue);
+    transition: .1s ease;
+}
+
+.buttonlocal i{
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.buttonlocal p{
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.ver {
+    position: absolute;
+    justify-content: right;
+    display: flex;
+    right: 1vw;
+    top: 4%;
+    padding: 1vw;
+    min-width: 20%;
+    filter: drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+    transition: .5s;
+}
+
+.verIsOpen {
+    visibility: visible;
+    min-height: 13vh;
+    opacity: 1;
+}
+
+.verIsClose {
+    visibility: hidden;
+    height: 0vh;
+    opacity: 0;
+}
+
+.ver h2{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.ver .close {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.ver .close .icon:hover {
+    background-color: #ff0101;
+    padding: 5px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+
+.close svg {
+    cursor: pointer;
+}
+
+.ver a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    height: 9%;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+.showlinks{
+    display: inline-table;
+}
+.ver a i{
+    font-size: 25px;
+}
+
+.ver a:hover {
+    background-color: var(--green);
+}
+
+.ver a h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .localtxt{
+        width: 100%;
+    }
+    .localandsite{
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid var(--gray);
+        border-radius: 10px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        transition: .3s ease-in-out;
+        margin-bottom: 2rem;
+    }
+    .buttonlocal{
+        display: flex;
+        border-radius: 10px;
+        padding: 15px;
+        min-width: 20px;
+        height: 1.4rem;
+        background-color: var(--green);
+        border-radius: 10px;
+    }
+    .localadress p{
+        font-weight: 500;
+        font-size: 17px;
+        color: var(--green);
+    }    
+
+    .buttonlocal p{
+        display: none;
+        margin-right: 0;
+    }
+    .imglocal img{
+        display: none;
+    }    
+    
+}
+
+/*==== Rodapé ====*/
+footer{
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    justify-content: center;
+}
+
+.container-rodape{
+    padding-top: 1.5rem;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+
+.container-rodape .linha-vertical{
+    background-color: var(--green);
+    height: 4px;
+    max-width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.container-rodape .linha-vertical2{
+    background-color: var(--green);
+    height: 4px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    align-self: right;
+}
+
+.sobre-nos{
+    color: var(--dark-blue);
+}
+
+.sobre-nos h2{
+    font-size: 1.5rem;
+}
+
+.sobre-nos p{
+    font-size: 17px;
+    max-width: 300px;
+}
+.panellinks{
+    margin: auto;
+}
+
+.links{
+    display: flex;
+}
+
+.links li a i{
+    color: var(--dark-blue);
+    font-size: 25px;
+}
+
+.links li a{
+    padding: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .5s ease-out;
+}
+
+.links li a:hover{
+    padding: 10px;
+    background-color: var(--green);
+    transition: .2s ease-in;
+}
+
+.contate-nos{
+    text-align: right;
+    color: var(--dark-blue);
+}
+
+.contate-nos p{
+    max-width: 250px;
+}
+
+@media screen and (max-width: 991px){
+    .container-rodape{
+        padding-top: 1rem;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        display: table;
+        padding-bottom: 1rem;
+    }
+    .sobre-nos p{
+        font-size: 17px;
+        max-width: 100%;
+    }
+    
+    .links{
+        margin-top: 1rem;
+    }
+
+    .linksone{
+        display: flex;
+    }
+
+    .linkstwo{
+        display: flex;
+    }
+
+    .links li a{
+        padding: 10px;
+        background-color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: .5s ease-out;
+    }
+    
+    .contate-nos p{
+        max-width: 100%;
+    }
+
+    .contate-nos{
+        text-align: justify;
+        color: var(--dark-blue);
+    }
+
+    .container-rodape .linha-vertical{
+        max-width: 30%;
+    }
+    
+    .container-rodape .linha-vertical2{
+        max-width: 30%;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <title>GreenPoint</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/icon.png" alt="logo">
+            <h1>GreenPoint</h1>
+        </div>
+        <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: #3F3D56"></span>
+        <nav class="menu menuIsClose" id="menu">
+            <div class="close">
+                <span onclick="switchMenu()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+            </div>
+
+            <a>
+                <span class="iconify" data-icon="bx:home-alt" data-height="35"></span>
+                <h2>Home</h2>
+            </a>
+
+            <a>
+                <span class="iconify" data-icon="fluent:news-24-regular" data-height="35"></span>
+                <h2>Notícias</h2>
+            </a>
+
+            <a href="./LocalsAndSites/index.html">
+                <span class="iconify" data-icon="akar-icons:location" data-height="35"></span>
+                <h2>Locais e Sites</h2>
+            </a>
+
+            <a href="./Configurações/index.html">
+                <span class="iconify" data-icon="ci:settings" data-height="35"></span>
+                <h2>Configurações</h2>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>GreenPoint</h1>
+            <h2>Venha conosco construir um mundo melhor!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nullam arcu neque, blandit quis velit ut, vulputate malesuada leo. </p>
+            <div class="buttons">
+                <button>Ir para o app</button>
+                <p>Ir para notícias
+                    <span class="iconify" data-icon="eva:arrow-ios-forward-fill" data-height="22"></span>
+                </p>
+            </div>
+        </div>
+        <div>
+            <img src="img/qrcode.svg" alt="Qr Code">
+        </div>
+    </main>
+    
+</body>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="./js/menu.js"></script>
+</html>
