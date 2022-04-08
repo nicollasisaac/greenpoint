@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     user-select: none;
+    text-decoration: none;
 }
 
 /*==== Scroll Personalizado ====*/
@@ -116,9 +117,15 @@ header > div h1 {
     margin-left: 10px;
 }
 
-/*Menu*/
+/* Responsive - Menu */
+@media screen and (max-width: 1500px) {
+    .menu {
+        width: 20rem;
+    }
+}
 
-#Local h1{
+/*==== Section Devs ====*/
+#Devs h1{
     color: var(--green);
     font-weight: 700;
     font-size: 3rem;
@@ -127,223 +134,46 @@ header > div h1 {
     margin-bottom: 1.5rem;
 }
 
-.localandsite{
-    padding: 30px;
-    border: 1px solid var(--gray);
-    border-radius: 10px;
+.desenvolvedores{
     width: 90%;
     margin: auto;
+    padding-bottom: 1rem;
+}
+
+.line{
     display: flex;
     justify-content: space-between;
-    transition: .3s ease-in-out;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
-.localandsite:hover{
-   background-color: #03a0447c;
-   transition: .4s ease-in;
-}
-
-.imglocal img{
-    width: 75%;
-}
-
-.localtxt{
-    width: 80%;
-}
-
-.localtxt h2{
+.dev{
+    font-size: 20px;
+    font-weight: 500;
     color: var(--dark-blue);
-    font-size: 1.5rem;
-}
-
-.localtxt p{
-    color:var(--dark-gray);
-}
-
-.localcontact{
-    margin-top: 10px;
-}
-
-.localadress {
     display: flex;
-    color: var(--green);
-    margin-top: 10px;
-    cursor: pointer;
 }
 
-.localadress i{
-    color: var(--green);
-    font-size: 25px;
+.dev img{
+    width: 50%;
+    margin-right: 10px;
 }
 
-.localadress p{
-    font-weight: 500;
-    font-size: 17px;
-    color: var(--green);
-    margin-left: 10px;
-}
-
-.linkadress a{
-    display: flex;
-    color: var(--green);
-    margin-top: 10px;
-}
-
-.linkadress a p{
-    font-weight: 500;
-    font-size: 17px;
-    color: var(--green);
-    margin-left: 10px;
-}
-
-.buttonlocal{
-    cursor: pointer;
-    display: flex;
-    border-radius: 10px;
-    padding: 15px;
-    min-width: 140px;
-    height: 1.4rem;
-    background-color: var(--green);
-    border-radius: 10px;
-    transition: .3s ease;
-}
-
-.buttonlocal:hover{
-    background-color: var(--dark-blue);
-    transition: .1s ease;
-}
-
-.buttonlocal i{
-    font-size: 25px;
-    color: #FFFFFF;
-}
-
-.buttonlocal p{
-    color: #FFFFFF;
-    font-size: 17px;
-    font-weight: 500;
+.dev p{
     text-align: center;
-    margin-right: 5px;
-}
-
-.ver {
-    position: absolute;
-    justify-content: right;
-    display: flex;
-    right: 1vw;
-    top: 4%;
-    padding: 1vw;
-    min-width: 20%;
-    filter: drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.3));
-    border-radius: 10px;
-    background-color: var(--dark-blue);
-    transition: .5s;
-}
-
-.verIsOpen {
-    visibility: visible;
-    min-height: 13vh;
-    opacity: 1;
-}
-
-.verIsClose {
-    visibility: hidden;
-    height: 0vh;
-    opacity: 0;
-}
-
-.ver h2{
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.ver .close {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-}
-
-.ver .close .icon:hover {
-    background-color: #ff0101;
-    padding: 5px;
-    height: 35px;
-    border-radius: 10px;
-}
-
-
-.close svg {
-    cursor: pointer;
-}
-
-.ver a {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding-inline: 10px;
-    height: 9%;
-    border-radius: 5px;
-    background-color: transparent;
-    color: white;
-    margin-bottom: 5px;
-    transition: .5s;
-}
-.showlinks{
-    display: inline-table;
-}
-.ver a i{
-    font-size: 25px;
-}
-
-.ver a:hover {
-    background-color: var(--green);
-}
-
-.ver a h2 {
-    margin-left: 10px;
-    margin-top: 10px;
+    padding-top: 15%;
+    min-width: 200px;
 }
 
 @media screen and (max-width: 991px){
-    .localtxt{
-        width: 100%;
+    .line{
+        display: inline-block;
+        margin-bottom: 0;
     }
-    .localandsite{
-        cursor: pointer;
-        padding: 10px;
-        border: 1px solid var(--gray);
-        border-radius: 10px;
-        width: 90%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        transition: .3s ease-in-out;
+    .dev{
         margin-bottom: 2rem;
     }
-    .buttonlocal{
-        display: flex;
-        border-radius: 10px;
-        padding: 15px;
-        min-width: 20px;
-        height: 1.4rem;
-        background-color: var(--green);
-        border-radius: 10px;
-    }
-    .localadress p{
-        font-weight: 500;
-        font-size: 17px;
-        color: var(--green);
-    }    
-
-    .buttonlocal p{
-        display: none;
-        margin-right: 0;
-    }
-    .imglocal img{
-        display: none;
-    }    
-    
 }
+
 
 /*==== Rodapé ====*/
 footer{
@@ -423,6 +253,10 @@ footer{
     transition: .2s ease-in;
 }
 
+.links li a:hover i {
+    color: white;
+}
+
 .contate-nos{
     text-align: right;
     color: var(--dark-blue);
@@ -430,13 +264,6 @@ footer{
 
 .contate-nos p{
     max-width: 250px;
-}
-
-/* Responsive - Menu */
-@media screen and (max-width: 1500px) {
-    .menu {
-        width: 20rem;
-    }
 }
 
 @media screen and (max-width: 991px){
@@ -448,7 +275,6 @@ footer{
         display: table;
         padding-bottom: 1rem;
     }
-    
     .sobre-nos p{
         font-size: 17px;
         max-width: 100%;

@@ -94,7 +94,7 @@ header > div h1 {
     align-items: center;
 
     padding-inline: 10px;
-    height: 9%;
+    height: 4rem;
 
     border-radius: 5px;
 
@@ -201,4 +201,43 @@ main .buttons p:hover svg {
 
 main > div:last-of-type img{
     width: 40vw;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: grid;
+        height: auto;
+    }
+
+    main > div {
+        width: 90vw;
+        height: auto;
+        margin-block: 3rem;
+    }
+
+    main > div:last-of-type {
+        flex-direction: row;
+        grid-row: 1;
+    }
+
+    main > div:last-of-type img {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main > div:last-of-type img {
+        width: 80vw;
+    }
+
+    main > div:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+/* Responsive - Menu */
+@media screen and (max-width: 1500px) {
+    .menu {
+        width: 20rem;
+    }
 }
