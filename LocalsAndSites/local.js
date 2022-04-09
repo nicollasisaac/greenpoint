@@ -20,4 +20,3 @@ function switchVerMais() {
         ver = 0;
     }
 }
-

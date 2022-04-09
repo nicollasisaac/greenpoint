@@ -8,6 +8,11 @@
     user-select: none;
 }
 
+main{
+    background: var(--white);
+    padding-bottom: 1rem;
+}
+
 /*==== Scroll Personalizado ====*/
 ::-webkit-scrollbar{
 	width: .5vw;
@@ -23,16 +28,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: var(--white);
 
+    width: 90vw;
     height: 10vh;
-    padding-left: 5vw;
-    padding-right: 4.5vw;
+    padding-inline: 5vw;
 
     border-bottom: 4px solid var(--green);
     box-shadow: 0px 3px 8px rgba(3, 160, 69, 0.6);
 }
 
-header > svg {
+header svg {
     cursor: pointer;
 }
 
@@ -54,21 +60,27 @@ header > div h1 {
     -webkit-text-stroke-color: var(--dark-blue);
     text-shadow: 0px 3px 1px var(--dark-blue);
 
-    color: white;
+    color: var(--white);
 }
 
 /* Menu */ 
 .menu {
-    position:absolute;
+    position: absolute;
     justify-content: right;
+
     right: 3vw;
     top: 3%;
+
     padding: 1vw;
+
     width: 18vw;
     height: 90vh;
+
     filter: drop-shadow(-8px 8px 0px rgba(0, 0, 0, 0.3));
+
     border-radius: 15px;
     background-color: var(--green);
+
     transition: .5s;
     z-index: 100;
 }
@@ -97,14 +109,20 @@ header > div h1 {
 
 .menu a {
     cursor: pointer;
+
     display: flex;
     align-items: center;
+
     padding-inline: 10px;
-    height: 9%;
+    height: 4rem;
+
     border-radius: 5px;
+
     background-color: transparent;
-    color: white;
+    color: var(--white);
+    
     text-decoration: none;
+
     transition: .5s;
 }
 
@@ -118,13 +136,16 @@ header > div h1 {
 
 /*Menu*/
 
+
+/*Menu*/
+
 #Local h1{
     color: var(--green);
     font-weight: 700;
     font-size: 3rem;
     margin-left: 5%;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .localandsite{
@@ -157,8 +178,8 @@ header > div h1 {
     font-size: 1.5rem;
 }
 
-.localtxt p{
-    color:var(--dark-gray);
+.localtxt p {
+    color: var(--dark-blue);
 }
 
 .localcontact{
@@ -216,11 +237,11 @@ header > div h1 {
 
 .buttonlocal i{
     font-size: 25px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .buttonlocal p{
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 17px;
     font-weight: 500;
     text-align: center;
@@ -284,7 +305,7 @@ header > div h1 {
     height: 9%;
     border-radius: 5px;
     background-color: transparent;
-    color: white;
+    color: var(--white);
     margin-bottom: 5px;
     transition: .5s;
 }
@@ -347,7 +368,7 @@ header > div h1 {
 
 /*==== Rodapé ====*/
 footer{
-    background-color: rgba(0, 0, 0, 0.05);
+    background: var(--light-gray);
     position: relative;
     justify-content: center;
 }
@@ -381,7 +402,7 @@ footer{
 }
 
 .sobre-nos{
-    color: var(--dark-blue);
+    color: var(--rodape-blue);
 }
 
 .sobre-nos h2{
@@ -401,13 +422,13 @@ footer{
 }
 
 .links li a i{
-    color: var(--dark-blue);
+    color: var(--rodape-blue);
     font-size: 25px;
 }
 
 .links li a{
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -423,20 +444,17 @@ footer{
     transition: .2s ease-in;
 }
 
+.links li a:hover i {
+    color: var(--rodape-blue);
+}
+
 .contate-nos{
     text-align: right;
-    color: var(--dark-blue);
+    color: var(--rodape-blue);
 }
 
 .contate-nos p{
     max-width: 250px;
-}
-
-/* Responsive - Menu */
-@media screen and (max-width: 1500px) {
-    .menu {
-        width: 20rem;
-    }
 }
 
 @media screen and (max-width: 991px){
@@ -448,7 +466,6 @@ footer{
         display: table;
         padding-bottom: 1rem;
     }
-    
     .sobre-nos p{
         font-size: 17px;
         max-width: 100%;
@@ -468,7 +485,7 @@ footer{
 
     .links li a{
         padding: 10px;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
@@ -483,7 +500,6 @@ footer{
 
     .contate-nos{
         text-align: justify;
-        color: var(--dark-blue);
     }
 
     .container-rodape .linha-vertical{

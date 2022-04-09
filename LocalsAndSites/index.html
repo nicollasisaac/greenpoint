@@ -16,308 +16,312 @@
     <title>GreenPoint</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="../img/icon.png" alt="logo">
-            <h1>GreenPoint</h1>
-        </div>
-        <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: #3F3D56"></span>
-        <nav class="menu menuIsClose" id="menu">
-            <div class="close">
-                <span onclick="switchMenu()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+    <main>
+        <header>
+            <div>
+                <img src="../img/icon.png" alt="logo">
+                <h1>GreenPoint</h1>
             </div>
-
-            <a href="../index.html">
-                <span class="iconify" data-icon="bx:home-alt" data-height="35"></span>
-                <h2>Home</h2>
-            </a>
-
-            <a>
-                <span class="iconify" data-icon="fluent:news-24-regular" data-height="35"></span>
-                <h2>Notícias</h2>
-            </a>
-
-            <a>
-                <span class="iconify" data-icon="akar-icons:location" data-height="35"></span>
-                <h2>Locais e Sites</h2>
-            </a>
-
-            <a href="../Settings/index.html">
-                <span class="iconify" data-icon="ci:settings" data-height="35"></span>
-                <h2>Configurações</h2>
-            </a>
-        </nav>
-    </header>
-
-    <section id="Local">
-
-        <h1>Locais e Sites</h1>
-        
-        <div data-aos="fade-up" class="localandsite">
-            <div class="imglocal">
-                <img src="../img/map.svg" alt="">
-            </div>
-            <div class="localtxt">
-                <h2>Centro de coleta</h2>
-                <div class="localcontact">
-                    <p>Contato: (xx) xxxxx-xxxx </p>
-                </div>
-                <div class="localadress">
-                    <i class="fas fa-location-dot"></i> 
-                    <p>R. Passarinho Azul, 88 - SP</p>
-                </div>
-            </div>
-            <span onclick="switchVerMais()">
-                <div class="buttonlocal">
-                    <p>Mais Opções</p>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </span>
-            <div class="ver verIsClose" id="ver">
-                <div class="showlinks">
-                    <a>
-                        <i class="fa-regular fa-copy"></i>
-                        <h2>Copiar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
-                        <h2>Compartilhar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
-                        <h2>Reportar</h2>
-                    </a>
-                </div>
+            <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: #3F3D56"></span>
+            
+            <nav class="menu menuIsClose" id="menu">
                 <div class="close">
-                    <div class="icon">
-                        <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                    <span onclick="switchMenu()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                </div>
+    
+                <a href="./index.html">
+                    <span class="iconify" data-icon="bx:home-alt" data-height="35"></span>
+                    <h2>Home</h2>
+                </a>
+    
+                <a href="./News/index.html">
+                    <span class="iconify" data-icon="fluent:news-24-regular" data-height="35"></span>
+                    <h2>Notícias</h2>
+                </a>
+    
+                <a href="./LocalsAndSites/index.html">
+                    <span class="iconify" data-icon="akar-icons:location" data-height="35"></span>
+                    <h2>Locais e Sites</h2>
+                </a>
+    
+                <a href="./Settings/index.html">
+                    <span class="iconify" data-icon="ci:settings" data-height="35"></span>
+                    <h2>Configurações</h2>
+                </a>
+            </nav>
+        </header>
+    
+        <section id="Local">
+    
+            <h1>Locais e Sites</h1>
+            
+            <div data-aos="fade-up" class="localandsite">
+                <div class="imglocal">
+                    <img src="../img/map.svg" alt="">
+                </div>
+                <div class="localtxt">
+                    <h2>Centro de coleta</h2>
+                    <div class="localcontact">
+                        <p id="contato">  </p>
+                    </div>
+                    <div class="localadress">
+                        <i class="fas fa-location-dot"></i> 
+                        <p>R. Passarinho Azul, 88 - SP</p>
                     </div>
                 </div>
-            </div> 
-        </div>
-
-        <div data-aos="fade-up" class="localandsite">
-            <div class="imglocal">
-                <img src="../img/linklocal.svg" alt="">
+                <span onclick="switchVerMais()">
+                    <div class="buttonlocal">
+                        <p>Mais Opções</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </span>
+                <div class="ver verIsClose" id="ver">
+                    <div class="showlinks">
+                        <a>
+                            <i class="fa-regular fa-copy"></i>
+                            <h2>Copiar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
+                            <h2>Compartilhar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
+                            <h2>Reportar</h2>
+                        </a>
+                    </div>
+                    <div class="close">
+                        <div class="icon">
+                            <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="localtxt">
-                <h2>Site para doar</h2>
-                <div class="localcontact">
-                    <p>Contato: (xx) xxxxx-xxxx </p>
+    
+            <div data-aos="fade-up" class="localandsite">
+                <div class="imglocal">
+                    <img src="../img/linklocal.svg" alt="">
                 </div>
-                <div class="linkadress">
-                    <a href="">
-                        <span class="iconify" data-icon="cil:link-alt" data-height="30px"></span>
-                        <p>R. Passarinho Azul, 88 - SP</p>
-                    </a>
-                </div>
-            </div>
-            <span onclick="switchVerMais()">
-                <div class="buttonlocal">
-                    <p>Mais Opções</p>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </span>
-            <div class="ver verIsClose" id="ver">
-                <div class="showlinks">
-                    <a>
-                        <i class="fa-regular fa-copy"></i>
-                        <h2>copiar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
-                        <h2>compartilhar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
-                        <h2>reportar</h2>
-                    </a>
-                </div>
-                <div class="close">
-                    <div class="icon">
-                        <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
-                    </div>s
-                </div>
-            </div> 
-        </div>
-
-        <div data-aos="fade-up" class="localandsite">
-            <div class="imglocal">
-                <img src="../img/map.svg" alt="">
-            </div>
-            <div class="localtxt">
-                <h2>Centro de coleta</h2>
-                <div class="localcontact">
-                    <p>Contato: (xx) xxxxx-xxxx </p>
-                </div>
-                <div class="localadress">
-                    <i class="fas fa-location-dot"></i> 
-                    <p>R. Passarinho Azul, 88 - SP</p>
-                </div>
-            </div>
-            <span onclick="switchVerMais()">
-                <div class="buttonlocal">
-                    <p>Mais Opções</p>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </span>
-            <div class="ver verIsClose" id="ver">
-                <div class="showlinks">
-                    <a>
-                        <i class="fa-regular fa-copy"></i>
-                        <h2>copiar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
-                        <h2>compartilhar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
-                        <h2>reportar</h2>
-                    </a>
-                </div>
-                <div class="close">
-                    <div class="icon">
-                        <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                <div class="localtxt">
+                    <h2>Site para doar</h2>
+                    <div class="localcontact">
+                        <p>Contato: (xx) xxxxx-xxxx </p>
+                    </div>
+                    <div class="linkadress">
+                        <a href="">
+                            <span class="iconify" data-icon="cil:link-alt" data-height="30px"></span>
+                            <p>R. Passarinho Azul, 88 - SP</p>
+                        </a>
                     </div>
                 </div>
-            </div> 
-        </div>
-
-        <div data-aos="fade-up" class="localandsite">
-            <div class="imglocal">
-                <img src="../img/linklocal.svg" alt="">
+                <span onclick="switchVerMais()">
+                    <div class="buttonlocal">
+                        <p>Mais Opções</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </span>
+                <div class="ver verIsClose" id="ver">
+                    <div class="showlinks">
+                        <a>
+                            <i class="fa-regular fa-copy"></i>
+                            <h2>copiar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
+                            <h2>compartilhar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
+                            <h2>reportar</h2>
+                        </a>
+                    </div>
+                    <div class="close">
+                        <div class="icon">
+                            <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                        </div>s
+                    </div>
+                </div> 
             </div>
-            <div class="localtxt">
-                <h2>Site para doar</h2>
-                <div class="localcontact">
-                    <p>Contato: (xx) xxxxx-xxxx </p>
+    
+            <div data-aos="fade-up" class="localandsite">
+                <div class="imglocal">
+                    <img src="../img/map.svg" alt="">
                 </div>
-                <div class="linkadress">
-                    <a href="">
-                        <span class="iconify" data-icon="cil:link-alt" data-height="30px"></span>
+                <div class="localtxt">
+                    <h2>Centro de coleta</h2>
+                    <div class="localcontact">
+                        <p>Contato: (xx) xxxxx-xxxx </p>
+                    </div>
+                    <div class="localadress">
+                        <i class="fas fa-location-dot"></i> 
                         <p>R. Passarinho Azul, 88 - SP</p>
-                    </a>
-                </div>
-            </div>
-            <span onclick="switchVerMais()">
-                <div class="buttonlocal">
-                    <p>Mais Opções</p>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </span>
-            <div class="ver verIsClose" id="ver">
-                <div class="showlinks">
-                    <a>
-                        <i class="fa-regular fa-copy"></i>
-                        <h2>copiar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
-                        <h2>compartilhar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
-                        <h2>reportar</h2>
-                    </a>
-                </div>
-                <div class="close">
-                    <div class="icon">
-                        <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
-                    </div>s
-                </div>
-            </div> 
-        </div>
-
-        <div data-aos="fade-up" class="localandsite">
-            <div class="imglocal">
-                <img src="../img/map.svg" alt="">
-            </div>
-            <div class="localtxt">
-                <h2>Centro de coleta</h2>
-                <div class="localcontact">
-                    <p>Contato: (xx) xxxxx-xxxx </p>
-                </div>
-                <div class="localadress">
-                    <i class="fas fa-location-dot"></i> 
-                    <p>R. Passarinho Azul, 88 - SP</p>
-                </div>
-            </div>
-            <span onclick="switchVerMais()">
-                <div class="buttonlocal">
-                    <p>Mais Opções</p>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </span>
-            <div class="ver verIsClose" id="ver">
-                <div class="showlinks">
-                    <a>
-                        <i class="fa-regular fa-copy"></i>
-                        <h2>copiar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
-                        <h2>compartilhar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
-                        <h2>reportar</h2>
-                    </a>
-                </div>
-                <div class="close">
-                    <div class="icon">
-                        <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
                     </div>
                 </div>
-            </div> 
-        </div>
-
-        <div data-aos="fade-up" class="localandsite">
-            <div class="imglocal">
-                <img src="../img/linklocal.svg" alt="">
+                <span onclick="switchVerMais()">
+                    <div class="buttonlocal">
+                        <p>Mais Opções</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </span>
+                <div class="ver verIsClose" id="ver">
+                    <div class="showlinks">
+                        <a>
+                            <i class="fa-regular fa-copy"></i>
+                            <h2>copiar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
+                            <h2>compartilhar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
+                            <h2>reportar</h2>
+                        </a>
+                    </div>
+                    <div class="close">
+                        <div class="icon">
+                            <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="localtxt">
-                <h2>Site para doar</h2>
-                <div class="localcontact">
-                    <p>Contato: (xx) xxxxx-xxxx </p>
+    
+            <div data-aos="fade-up" class="localandsite">
+                <div class="imglocal">
+                    <img src="../img/linklocal.svg" alt="">
                 </div>
-                <div class="linkadress">
-                    <a href="">
-                        <span class="iconify" data-icon="cil:link-alt" data-height="30px"></span>
+                <div class="localtxt">
+                    <h2>Site para doar</h2>
+                    <div class="localcontact">
+                        <p>Contato: (xx) xxxxx-xxxx </p>
+                    </div>
+                    <div class="linkadress">
+                        <a href="">
+                            <span class="iconify" data-icon="cil:link-alt" data-height="30px"></span>
+                            <p>R. Passarinho Azul, 88 - SP</p>
+                        </a>
+                    </div>
+                </div>
+                <span onclick="switchVerMais()">
+                    <div class="buttonlocal">
+                        <p>Mais Opções</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </span>
+                <div class="ver verIsClose" id="ver">
+                    <div class="showlinks">
+                        <a>
+                            <i class="fa-regular fa-copy"></i>
+                            <h2>copiar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
+                            <h2>compartilhar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
+                            <h2>reportar</h2>
+                        </a>
+                    </div>
+                    <div class="close">
+                        <div class="icon">
+                            <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                        </div>s
+                    </div>
+                </div> 
+            </div>
+    
+            <div data-aos="fade-up" class="localandsite">
+                <div class="imglocal">
+                    <img src="../img/map.svg" alt="">
+                </div>
+                <div class="localtxt">
+                    <h2>Centro de coleta</h2>
+                    <div class="localcontact">
+                        <p>Contato: (xx) xxxxx-xxxx </p>
+                    </div>
+                    <div class="localadress">
+                        <i class="fas fa-location-dot"></i> 
                         <p>R. Passarinho Azul, 88 - SP</p>
-                    </a>
+                    </div>
                 </div>
+                <span onclick="switchVerMais()">
+                    <div class="buttonlocal">
+                        <p>Mais Opções</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </span>
+                <div class="ver verIsClose" id="ver">
+                    <div class="showlinks">
+                        <a>
+                            <i class="fa-regular fa-copy"></i>
+                            <h2>copiar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
+                            <h2>compartilhar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
+                            <h2>reportar</h2>
+                        </a>
+                    </div>
+                    <div class="close">
+                        <div class="icon">
+                            <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <span onclick="switchVerMais()">
-                <div class="buttonlocal">
-                    <p>Mais Opções</p>
-                    <i class="fa-solid fa-angle-down"></i>
+    
+            <div data-aos="fade-up" class="localandsite">
+                <div class="imglocal">
+                    <img src="../img/linklocal.svg" alt="">
                 </div>
-            </span>
-            <div class="ver verIsClose" id="ver">
-                <div class="showlinks">
-                    <a>
-                        <i class="fa-regular fa-copy"></i>
-                        <h2>copiar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
-                        <h2>compartilhar</h2>
-                    </a>
-                    <a>
-                        <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
-                        <h2>reportar</h2>
-                    </a>
+                <div class="localtxt">
+                    <h2>Site para doar</h2>
+                    <div class="localcontact">
+                        <p>Contato: (xx) xxxxx-xxxx </p>
+                    </div>
+                    <div class="linkadress">
+                        <a href="">
+                            <span class="iconify" data-icon="cil:link-alt" data-height="30px"></span>
+                            <p>R. Passarinho Azul, 88 - SP</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="close">
-                    <div class="icon">
-                        <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
-                    </div>s
-                </div>
-            </div> 
-        </div>
+                <span onclick="switchVerMais()">
+                    <div class="buttonlocal">
+                        <p>Mais Opções</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </span>
+                <div class="ver verIsClose" id="ver">
+                    <div class="showlinks">
+                        <a>
+                            <i class="fa-regular fa-copy"></i>
+                            <h2>copiar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
+                            <h2>compartilhar</h2>
+                        </a>
+                        <a>
+                            <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
+                            <h2>reportar</h2>
+                        </a>
+                    </div>
+                    <div class="close">
+                        <div class="icon">
+                            <span onclick="switchVerMais()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+                        </div>s
+                    </div>
+                </div> 
+            </div>
+    
+        </section>
 
-    </section>
+    </main>
     <footer class="Rodape">
         <div class="container-rodape">
             <div class="sobre-nos">
@@ -344,10 +348,12 @@
             </div>
         </div>
     </footer>
+<script src="../css/darkmode.js"></script>
 </body>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="../LocalsAndSites/local.js"></script>
 <script src="../js/menu.js"></script>
+<script src="../LocalsAndSites/places.js"></script>
 </html> 
