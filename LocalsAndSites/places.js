@@ -98,9 +98,17 @@ const Places = [
 ]
 
 
+Places.map((itemlocal)=>{
 
-function showinfo(){
-    var contatct;
-    contatct = document.getElementById(contato)
-    contatct.innerText = phoneNumber[1];
-}
+    let items_local = document.querySelector(`.localtxt`).cloneNode(true);
+                document.querySelector(".localtxt h2").innerHTML = itemlocal.title;
+                document.querySelector(".localtxt p").innerHTML = itemlocal.phoneNumber;
+                document.querySelector(".localtxt .localadress p").innerHTML = itemlocal.address;
+                document.querySelector(".linkadress a").href = itemlocal.link;
+     
+
+})
+
+
+
+

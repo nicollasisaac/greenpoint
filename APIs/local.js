@@ -1,7 +1,7 @@
  AOS.init();
  let verIsOpen = false;
 
-function switchVerMais(numButton) {
+function switchVerMais() {
     var ver;
     ver =  document.getElementById('ver');
     if(!verIsOpen)
@@ -17,6 +17,5 @@ function switchVerMais(numButton) {
         ver.classList.add("verIsClose");
         verIsOpen = false;
         return;
-        ver = 0;
     }
 }
