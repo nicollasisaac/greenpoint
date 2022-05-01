@@ -159,5 +159,4 @@ const News = [
         LinkNews : 'https://www.uol.com.br/vivabem/colunas/paola-machado/2021/03/25/por-que-aproveitar-integralmente-os-alimentos.htm',
         consultationDate: "2021-08-20"
     },
-
 ]

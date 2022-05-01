@@ -1,4 +1,4 @@
-const Places = [
+let Places = [
     { 
         title: "Ong Banco de Alimentos", 
         phoneNumber: '(11) 3674-0080',  
@@ -8,17 +8,17 @@ const Places = [
     },  
     { 
         title: "GreenPeace",  
-        phoneNumber: ' 0800 789 2510',  
-        link: ' https://doe.greenpeace.org.br',  
+        phoneNumber: '0800 789 2510',  
+        link: 'https://doe.greenpeace.org.br',  
     },  
     { 
         title: "Aldeia do Futuro",  
-        phoneNumber: ' (11) 5563-4436',  
-        link: ' https://www.aldeiadofuturo.org.br',  
+        phoneNumber: '(11) 5563-4436',  
+        link: 'https://www.aldeiadofuturo.org.br',  
     }, 
     { 
         title: "Unhcr Acnur",  
-        phoneNumber: ' (11) 5563-4436',  
+        phoneNumber: '(11) 5563-4436',  
         link: 'https://doar.acnur.org/acnur/donate.html',  
     }, 
     { 
@@ -96,11 +96,3 @@ const Places = [
         state: "SP" 
     }, 
 ]
-
-
-
-function showinfo(){
-    var contatct;
-    contatct = document.getElementById(contato)
-    contatct.innerText = phoneNumber[1];
-}

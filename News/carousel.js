@@ -41,7 +41,7 @@ function calcWidthItemsCarrosel() {
 }
 
 function moveRight(numCarrosel) {
-    var numItems = Math.round(container_carrosel[numCarrosel].clientWidth / carrosel.clientWidth);
+    var numItems = Math.round(container_carrosel[numCarrosel].clientWidth / carrosel.clientWidth + 0.5);
 
     margin[numCarrosel] += -width;
 

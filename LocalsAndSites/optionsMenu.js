@@ -3,8 +3,9 @@ let verIsOpen = false;
 
 function switchVerMais(numItem) {
     var ver =  document.querySelectorAll('.ver');
-    console.log(ver);
 
+    console.log(ver[numItem]);
+    
     if(!verIsOpen)
     {
         ver[numItem].classList.add("verIsOpen");
