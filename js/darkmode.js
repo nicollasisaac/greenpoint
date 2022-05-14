@@ -1,6 +1,12 @@
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#switch-shadow");
 
+window.addEventListener("load", () => {
+    if (darkMode == "enabled") {
+        darkModeToggle.checked = true;
+    }
+})
+
 const enableDarkMode = () => {
     document.body.classList.add("darkmode");
     localStorage.setItem("darkMode", "enabled");
@@ -24,10 +30,3 @@ darkModeToggle.addEventListener("click", () => {
         console.log(darkMode);
     }
 })
-
-
-//const $checkbox = document.querySelector('#switch-shadow')
-
-//$checkbox.addEventListener('change', function(){
-//    $html.classList.toggle('dark-mode')
-//})

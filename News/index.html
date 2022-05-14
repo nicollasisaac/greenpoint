@@ -57,7 +57,7 @@
                     <span class="iconify" data-icon="akar-icons:search" data-height="20"></span>
                     <input type="text" name="search" id="search" placeholder="Pesquisar">
                 </div>
-                <button onClick="search()">
+                <button>
                     <span class="iconify" data-icon="eva:arrow-ios-forward-fill" data-height="25" style="color:#03A045"></span>
                 </button>
             </div>
@@ -143,8 +143,17 @@
             </section>
         </section>
 
-        <section class="search">
-            
+        <section id="searchContainer" class="search">
+            <div id="container_search" class="container_carrosel">
+                <div id="items_carrosel_model_search" class="items_carrosel items_carrosel_search">
+                    <div id="container_ItemsSearch" class="container_ItemsCarrosel container_ItemsCarrosel_search">
+                        <img src="https://th.bing.com/th/id/OIP.kC9HmNpKNtiPf_l8g_QLJwHaE8?pid=ImgDet&rs=1" alt="img_agricultura">
+                        <h2>Shopping Garden dá dicas do que plantar no inverno</h2>
+                        <p>Em  jornaltribuna.com.br - Consultado em 21/08/2021</p>
+                        <a>Ver Mais</a>
+                    </div>
+                </div>
+            </div>
         </section>
         
     </main>
@@ -175,8 +184,8 @@
             </div>
         </div>
     </footer>
-    <script src="../css/darkmode.js"></script>
 </body>
+<script src="../js/darkmode.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="../js/menu.js"></script>
 <script src="../APIs/news.js"></script>

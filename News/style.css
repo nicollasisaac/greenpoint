@@ -307,6 +307,19 @@ main .carrosel > div {
     color:var(--white);
 }
 
+#container_search {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.container_ItemsCarrosel_search {
+    width: 20rem !important;
+    margin: 20px;
+}
+
 @media screen and (max-width: 540px) {
     .header_news {
         display: block;
