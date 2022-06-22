@@ -76,8 +76,8 @@
                     </div>
                 </div>
 
-                <span class="buttonVerMais" onclick="switchVerMais(0)">
-                    <div class="buttonlocal">
+                <span class="buttonVerMais">
+                    <div onclick="switchVerMais(0)" class="buttonlocal">
                         <p>Mais opções</p>
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
@@ -85,22 +85,22 @@
 
                 <div class="ver verIsClose" id="ver">
                     <div class="showlinks">
-                        <a>
+                        <a class="copy">
                             <i class="fa-regular fa-copy"></i>
                             <h2>Copiar</h2>
                         </a>
-                        <a>
+                        <a class="share">
                             <span class="iconify" data-icon="bx:share-alt" data-height="25"></span>
                             <h2>Compartilhar</h2>
                         </a>
-                        <a>
+                        <a href="https://docs.google.com/forms/d/1Dab6Xi2mCYEie4alT6A53JFbxBN1ibs01_T-dEBZ3lw/viewform?edit_requested=true">
                             <span class="iconify" data-icon="bi:exclamation-triangle" data-height="25"></span>
                             <h2>Reportar</h2>
                         </a>
                     </div>
-                    <div class="close">
-                        <div class="icon">
-                            <span onclick="switchVerMais(0)" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="margin-bottom: 20px;"></span>
+                    <div class="closeMenu">
+                        <div class="icon"onclick="switchVerMais(0)">
+                            <span class="iconify" data-icon="heroicons-outline:x" data-height="35" style="margin-bottom: 20px;"></span>
                         </div>
                     </div>
                 </div> 
@@ -119,8 +119,8 @@
             <div class="panellinks">
                 <div class="links">
                     <div class="linksone">
-                        <li><a><i class="fa-brands fa-rocketchat"></i></a></li>
-                        <li><a><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://forms.gle/KUFgtegduuvEJf8JA" target="_blank"><i class="fa-brands fa-rocketchat"></i></a></li>
+                        <li><a href="mailto: org.greenpoint@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
                     </div>
                     <div class="linkstwo">
                         <li><a><i class="fa-solid fa-qrcode"></i></a></li>
@@ -136,12 +136,11 @@
         </div>
     </footer>
 </body>
-
 <script src="../js/darkmode.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="./optionsMenu.js"></script>
-<script src="./places.js"></script>
+<script src="../APIs/places.js"></script>
 <script src="./main.js"></script>
 <script src="../js/menu.js"></script>
 </html> 

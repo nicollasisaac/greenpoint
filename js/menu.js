@@ -18,3 +18,12 @@ function switchMenu() {
         return;
     }
 }
+
+document.addEventListener("scroll", () => {
+    if(menuIsOpen) {
+        menu.classList.remove("menuIsOpen");
+        menu.classList.add("menuIsClose");
+        menuIsOpen = false;
+        return;
+    }
+});

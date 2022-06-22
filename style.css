@@ -235,6 +235,20 @@ main > div:last-of-type img{
     }
 }
 
+@media screen and (max-width: 300px){ 
+    header > div h1 {
+        font-size: 1.5rem;
+    }
+
+    main div h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu {
+        width: 90vw !important;
+    }
+}
+
 /* Responsive - Menu */
 @media screen and (max-width: 1500px) {
     .menu {

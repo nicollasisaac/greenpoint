@@ -4,8 +4,12 @@ searchInput.addEventListener('input', () => {
     let searchText = searchInput.value;
 
     // Input text does not exist
+    console.log(searchText.length)
     if(searchText.length == 0)
     {
+        document.querySelector(".carrousels").style.display = "block";
+        document.querySelector(".search").style.display = "none";
+
         removeSearchNews();
     }
 
@@ -17,7 +21,9 @@ searchInput.addEventListener('input', () => {
     }
 })
 
-function search(searchText) {
+async function search(searchText) {
+    removeSearchNews()
+
     let results = News.filter(item => {
         if(item.title.toLocaleLowerCase().indexOf(searchText.toLocaleLowerCase()) > -1)
             return true;
@@ -28,7 +34,8 @@ function search(searchText) {
     results.map((itemNews) => {
         let items_carrosel = document.querySelector(`.items_carrosel_search`).cloneNode(true);
 
-        items_carrosel.id = "items_carrosel";       
+        items_carrosel.id = "items_carrosel";  
+        items_carrosel.style.display = 'block'
         items_carrosel.querySelector(".container_ItemsCarrosel h2").innerHTML = itemNews.title;
         items_carrosel.querySelector(".container_ItemsCarrosel p").innerHTML = `${itemNews.link} - Consultado em ${new Date(itemNews.consultationDate).toLocaleDateString()}`;
         items_carrosel.querySelector(".container_ItemsCarrosel img").src = itemNews.imageNews;
@@ -36,16 +43,13 @@ function search(searchText) {
 
         document.querySelector('#container_search').append(items_carrosel);
     })
-
-    
-    document.getElementById("items_carrosel_model_search").parentNode.removeChild(document.getElementById("items_carrosel_model_search"));
 }
 
 function removeSearchNews() {
     var searchContainer = document.getElementById("container_search");
 
-    for(var i = 0; i < searchContainer.childElementCount; i++)
-    {
-        
-    }
+    let model = document.querySelector(`.items_carrosel_search`).cloneNode(true);
+    
+    searchContainer.innerHTML = "";
+    searchContainer.append(model)
 }

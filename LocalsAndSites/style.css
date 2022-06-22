@@ -5,7 +5,12 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+    text-decoration: none;
     user-select: none;
+}
+
+body {
+    background-color: var(--white);
 }
 
 main{
@@ -133,7 +138,6 @@ header > div h1 {
         width: 20rem;
     }
 }
-
 /*Menu*/
 
 #Local h1{
@@ -163,16 +167,21 @@ header > div h1 {
 }
 
 .imglocal img{
-    width: 75%;
+    width: 10rem;
+    margin-right: 2rem;
 }
 
 .localtxt{
     width: 80%;
+    overflow: hidden;
 }
 
 .localtxt h2{
     color: var(--dark-blue);
     font-size: 1.5rem;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .localtxt p {
@@ -188,6 +197,9 @@ header > div h1 {
     color: var(--green);
     margin-top: 10px;
     cursor: pointer;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .localadress i, .localsite i{
@@ -201,6 +213,9 @@ header > div h1 {
     font-size: 17px;
     color: var(--green);
     margin-left: 10px;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .linkadress a{
@@ -248,7 +263,7 @@ header > div h1 {
 
 .ver {
     position: absolute;
-    justify-content: right;
+    justify-content: space-between;
     display: flex;
     right: 1vw;
     top: 4%;
@@ -262,7 +277,7 @@ header > div h1 {
 
 .verIsOpen {
     visibility: visible;
-    min-height: 13vh;
+    height: 9rem;
     opacity: 1;
 }
 
@@ -277,28 +292,27 @@ header > div h1 {
     font-size: 18px;
 }
 
-.ver .close {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-}
-
-.ver .close svg {
+.ver .closeMenu svg {
     color: var(--white);
+    transition: 1s;
 }
 
-.ver .close .icon:hover svg {
+.ver .closeMenu .icon:hover svg {
     color: white;
 }
 
-.ver .close .icon:hover {
-    background-color: #ff0101;
+.ver .closeMenu .icon {
     padding: 5px;
     height: 35px;
     border-radius: 10px;
+    transition: 1s;
 }
 
-.close svg {
+.ver .closeMenu .icon:hover {
+    background-color: #ff0101;
+}
+
+.closeMenu svg {
     cursor: pointer;
 }
 
@@ -316,6 +330,7 @@ header > div h1 {
 }
 .showlinks{
     display: inline-table;
+    width: 80%;
 }
 .ver a i{
     font-size: 25px;
@@ -432,6 +447,7 @@ footer{
 }
 
 .links li a{
+    cursor: pointer;
     padding: 10px;
     background-color: var(--white);
     display: flex;
@@ -440,6 +456,7 @@ footer{
 	border-radius: 4px;
     margin-right: 10px;
     margin-bottom: 10px;
+    text-decoration: none;
     transition: .5s ease-out;
 }
 
@@ -463,6 +480,10 @@ footer{
 }
 
 @media screen and (max-width: 991px){
+    #Local h1 {
+        font-size: 2rem;
+    }
+
     .container-rodape{
         padding-top: 1rem;
         justify-content: space-between;
@@ -490,7 +511,6 @@ footer{
 
     .links li a{
         padding: 10px;
-        background-color: #ffffff;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
@@ -516,3 +536,12 @@ footer{
     }
 }
 
+@media screen and (max-width: 300px){ 
+    header > div h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        width: 90vw !important;
+    }
+}
