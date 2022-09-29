@@ -19,9 +19,6 @@ header {
     width: 90vw;
     height: 10vh;
     padding-inline: 5vw;
-
-    border-bottom: 4px solid var(--green);
-    box-shadow: 0px 3px 8px rgba(3, 160, 69, 0.6);
 }
 
 header svg {
@@ -35,12 +32,8 @@ header > div {
 }
 
 header > div img {
-    height: 85%;
-}
-
-header > div h1 {
-    font-size: 2.5rem;
-    color: var(--green);
+    width: 70%;
+    margin-top: 1.5rem;
 }
 
 /* Menu */ 
@@ -56,7 +49,7 @@ header > div h1 {
     width: 18vw;
     height: 90vh;
 
-    filter: drop-shadow(-8px 8px 0px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 0.199));
     border-radius: 15px;
     background-color: var(--green);
 
@@ -252,6 +245,6 @@ main > div:last-of-type img{
 /* Responsive - Menu */
 @media screen and (max-width: 1500px) {
     .menu {
-        width: 20rem;
+        width: 16rem;
     }
 }
