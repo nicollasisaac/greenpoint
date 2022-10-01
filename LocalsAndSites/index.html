@@ -16,48 +16,59 @@
     <title>GreenPoint</title>
 </head>
 <body>
-    <main>
-        <header>
-            <div>
-                <img src="../img/icon.png" alt="logo">
-                <h1>GreenPoint</h1>
+    <header>
+        <div> 
+            <a href="/index.html">
+                <img src="/img/Logo-GreenPoint.png" alt="logo">
+            </a>
+        </div>
+        
+        <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: var(--green)"></span>
+        
+        <nav class="menu menuIsClose" id="menu">
+            <div class="close">
+                <span onclick="switchMenu()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
             </div>
-            <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: #3F3D56"></span>
+
+            <a href="/index.html">
+                <span class="iconify" data-icon="bx:home-alt" data-height="35"></span>
+                <h2>Home</h2>
+            </a>
+
+            <a href="/News/index.html">
+                <span class="iconify" data-icon="fluent:news-24-regular" data-height="35"></span>
+                <h2>Notícias</h2>
+            </a>
             
-            <nav class="menu menuIsClose" id="menu">
-                <div class="close">
-                    <span onclick="switchMenu()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
+            <a href="/AboutUs/index.html">
+                <span class="iconify" data-icon="fluent-emoji-high-contrast:handshake" data-height="35"></span>
+                <h2>Sobre Nós</h2>
+            </a>
+
+            <a href="/LocalsAndSites/index.html">
+                <span class="iconify" data-icon="akar-icons:location" data-height="35"></span>
+                <h2>Ong`s</h2>
+            </a>
+
+            <div class="theme">
+                <div class="switch__container">
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+                    <label for="switch-shadow"></label>
                 </div>
+                <h2>Tema Escuro</h2>
+            </div>
+        </nav>
+    </header>
     
-                <a href="../index.html">
-                    <span class="iconify" data-icon="bx:home-alt" data-height="35"></span>
-                    <h2>Home</h2>
-                </a>
-    
-                <a href="../News/index.html">
-                    <span class="iconify" data-icon="fluent:news-24-regular" data-height="35"></span>
-                    <h2>Notícias</h2>
-                </a>
-    
-                <a href="#">
-                    <span class="iconify" data-icon="akar-icons:location" data-height="35"></span>
-                    <h2>Locais e Sites</h2>
-                </a>
-    
-                <a href="../Settings/index.html">
-                    <span class="iconify" data-icon="ci:settings" data-height="35"></span>
-                    <h2>Configurações</h2>
-                </a>
-            </nav>
-        </header>
-    
+    <main>
         <section id="Local">
     
-            <h1>Locais e Sites</h1>
+            <h1>ONG's</h1>
+            <h3>Locais e sites de ONG’s que aceitam doações</h3>
             
             <div id="localandsite_model" data-aos="fade-up" class="localandsite">
                 <div class="imglocal">
-                    <img src="../img/map.svg" alt="">
+                    <img src="../img/map.png" alt="">
                 </div>
                 <div class="localtxt">
                     <h2>Centro de coleta</h2>
@@ -78,7 +89,7 @@
 
                 <span class="buttonVerMais">
                     <div onclick="switchVerMais(0)" class="buttonlocal">
-                        <p>Mais opções</p>
+                        <p>Opções</p>
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
                 </span>
@@ -112,19 +123,19 @@
     <footer class="Rodape">
         <div class="container-rodape">
             <div class="sobre-nos">
-                <h2>Sobre Nós</h2>
+                <h2>Nosso objetivo</h2>
                 <div class="linha-vertical"></div>
                 <p>O Green Point tem o objetivo de diminuir a fome no MUNDO com diversas ações, uma delas é promover uma conexão entre possíveis doadores e pessoas que necessitam de doações!!</p>
             </div>
             <div class="panellinks">
                 <div class="links">
                     <div class="linksone">
-                        <li><a href="https://forms.gle/KUFgtegduuvEJf8JA" target="_blank"><i class="fa-brands fa-rocketchat"></i></a></li>
-                        <li><a href="mailto: org.greenpoint@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="/Contribua/index.html"><i class="fa-solid fa-hand-holding-medical"></i></a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-qrcode"></i></a></li>
                     </div>
                     <div class="linkstwo">
-                        <li><a><i class="fa-solid fa-qrcode"></i></a></li>
-                        <li><a><i class="fa-solid fa-link"></i></a></li>
+                        <li><a href="mailto: org.greenpoint@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="/QandA/index.html"><i class="fa-regular fa-circle-question"></i></a></li>
                     </div>
                 </div>
             </div>
@@ -135,6 +146,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script src="../js/darkmode.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

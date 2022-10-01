@@ -1,48 +1,29 @@
-@import url(../css/colors.css);
+@import url(/css/colors.css);
 
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    list-style: none;
     user-select: none;
+    list-style: none;
     text-decoration: none;
 }
 
 body {
-    background-color: var(--white);
-}
-
-main {
     background: var(--white);
-    padding-bottom: 1rem;
-}
-
-/*==== Scroll Personalizado ====*/
-::-webkit-scrollbar{
-	width: .5vw;
-}
-
-::-webkit-scrollbar-thumb{
-	background: linear-gradient(transparent, var(--green), var(--light-gray));
-	border-radius: 6px;
-	transition: .6s ease-in;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    height: 10vh;
-    padding-left: 5vw;
-    padding-right: 4.5vw;
-
-    border-bottom: 4px solid var(--green);
-    box-shadow: 0px 3px 8px rgba(3, 160, 69, 0.6);
+    background: var(--white);
+    margin: auto;
+    height: 15vh;
+    width: 90%;
 }
 
-header > svg {
+header svg {
     cursor: pointer;
 }
 
@@ -53,19 +34,16 @@ header > div {
 }
 
 header > div img {
-    height: 85%;
-}
-
-header > div h1 {
-    font-size: 2.5rem;
-    font-family: 'poppins';
-    color: var(--green);
+    width: 90%;
+    margin-top: 1.8rem;
 }
 
 /* Menu */ 
+
 .menu {
     position: absolute;
-    justify-content: right;
+    flex-direction: column;
+    z-index: 1000;
 
     right: 3vw;
     top: 3%;
@@ -75,13 +53,11 @@ header > div h1 {
     width: 18vw;
     height: 90vh;
 
-    filter: drop-shadow(-8px 8px 0px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 0.199));
     border-radius: 15px;
     background-color: var(--green);
 
     transition: .5s;
-
-    z-index: 100;
 }
 
 .menuIsOpen {
@@ -131,53 +107,27 @@ header > div h1 {
 
 .menu a h2 {
     margin-left: 10px;
-}
-
-/* Responsive - Menu */
-@media screen and (max-width: 1500px) {
-    .menu {
-        width: 20rem;
-    }
-}
-
-/*==== Section Config ====*/
-
-#config h1{color: var(--green);
-    font-weight: 700;
-    font-size: 3rem;
-    margin-left: 5%;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    font-weight: 0;
 }
 
 .theme{
-    font-size: 20px;
-    width: 90%;
-    margin: auto;
-    font-weight: 500;
-    color: var(--dark-blue);
-    margin-bottom: 2rem;
-}
-.theme p{
-    margin-bottom: 1rem;
+    display: flex;
+    position: absolute;    
+    bottom: 0;
+    margin-left: 10px;
+    padding-bottom: 1rem;
 }
 
-.termos{
-    font-size: 20px;
-    width: 90%;
-    margin: auto;
-    font-weight: 500;
-    color: var(--dark-blue);
-    margin-top: 1rem;
-}
-
-.termos a {
-    color: var(--green);
+.theme h2{
+    color: white;
+    margin-left: 60px;
+    font-weight: 300;
 }
 
 /* Estilo iOS */
 .switch__container {
-    width: 100px;
+    margin-top: 0.4rem;
+    width: 2px;
 }
   
 .switch {
@@ -196,8 +146,8 @@ header > div h1 {
 
 .switch--shadow + label {
     padding: 2px;
-    width: 110px;
-    height: 50px;
+    width: 50px;
+    height: 20px;
     background-color: #dddddd;
     border-radius: 60px;
 }
@@ -220,8 +170,8 @@ header > div h1 {
 }
 
 .switch--shadow + label:after {
-    width: 62px;
-    height: 58px;
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -234,14 +184,14 @@ header > div h1 {
 }
 
 .switch--shadow:checked + label:after {
-    transform: translate3d(60px, -3px, 0px);;
+    transform: translate3d(25px, -3px, 0px);;
 }
 
 /* Estilo Flat */
 .switch--flat + label {
     padding: 2px;
-    width: 120px;
-    height: 60px;
+    width: 60px;
+    height: 30px;
     background-color: #dddddd;
     border-radius: 60px;
     transition: background 0.4s;
@@ -283,56 +233,27 @@ header > div h1 {
     background-color: var(--green);
 }
 
-
-/*==== Section Devs ====*/
-#Devs h1{
-    color: var(--green);
-    font-weight: 700;
-    font-size: 3rem;
-    margin-left: 5%;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.desenvolvedores{
-    width: 90%;
-    margin: auto;
-    padding-bottom: 1rem;
-}
-
-.line{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.5rem;
-}
-
-.dev{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--dark-blue);
-    display: flex;
-}
-
-.dev img{
-    width: 50%;
-    margin-right: 10px;
-}
-
-.dev p{
-    text-align: center;
-    padding-top: 15%;
-    min-width: 200px;
-}
-
-@media screen and (max-width: 991px){
-    .line{
-        display: inline-block;
-        margin-bottom: 0;
+@media screen and (max-width: 300px){ 
+    header > div h1 {
+        font-size: 1.5rem;
     }
-    .dev{
-        margin-bottom: 2rem;
+
+    main div h1 {
+        font-size: 2.5rem;
+    }
+    
+    .menu {
+        width: 90vw !important;
     }
 }
+
+/* Responsive - Menu */
+@media screen and (max-width: 1500px) {
+    .menu {
+        width: 16rem;
+    }
+}
+
 
 /*==== Rodapé ====*/
 footer{
@@ -404,6 +325,7 @@ footer{
 	border-radius: 4px;
     margin-right: 10px;
     margin-bottom: 10px;
+    text-decoration: none;
     transition: .5s ease-out;
 }
 
@@ -427,15 +349,7 @@ footer{
 }
 
 @media screen and (max-width: 991px){
-    #Devs h1{
-        font-size: 2rem;
-    }
-
-    .dev img {
-        width: 30%;
-    }
-
-    #config h1 {
+    #Local h1 {
         font-size: 2rem;
     }
 
@@ -447,7 +361,6 @@ footer{
         display: table;
         padding-bottom: 1rem;
     }
-
     .sobre-nos p{
         font-size: 17px;
         max-width: 100%;
@@ -464,6 +377,16 @@ footer{
     .linkstwo{
         display: flex;
     }
+
+    .links li a{
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: .5s ease-out;
+    }
     
     .contate-nos p{
         max-width: 100%;
@@ -479,23 +402,5 @@ footer{
     
     .container-rodape .linha-vertical2{
         max-width: 30%;
-    }
-}
-
-@media screen and (max-width: 300px){ 
-    header > div h1 {
-        font-size: 1.5rem;
-    }
-
-    .menu {
-        width: 90vw !important;
-    }
-
-    .dev p {
-        min-width: 100px;
-    }
-
-    #Devs h1{
-        font-size: 1.5rem;
     }
 }

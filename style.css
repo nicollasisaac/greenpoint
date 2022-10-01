@@ -5,6 +5,8 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     user-select: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -109,8 +111,10 @@ header > div img {
 
 .theme{
     display: flex;
-    margin-top: 36vh;
+    position: absolute;    
+    bottom: 0;
     margin-left: 10px;
+    padding-bottom: 1rem;
 }
 
 .theme h2{

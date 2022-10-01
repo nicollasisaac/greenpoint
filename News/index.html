@@ -12,40 +12,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/solid.min.js" integrity="sha512-C92U8X5fKxCN7C6A/AttDsqXQiB7gxwvg/9JCxcqR6KV+F0nvMBwL4wuQc+PwCfQGfazIe7Cm5g0VaHaoZ/BOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="../img/icon.png" type="image/png">
-    <title>Green Point - Notícias</title>
+    <title>GreenPoint</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="../img/icon.png" alt="logo">
-            <h1>GreenPoint</h1>
+        <div> 
+            <a href="/index.html">
+                <img src="/img/Logo-GreenPoint.png" alt="logo">
+            </a>
         </div>
-        <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: #3F3D56"></span>
+        
+        <span onclick="switchMenu()" class="iconify" data-icon="gg:menu" data-height="35" style="color: var(--green)"></span>
         
         <nav class="menu menuIsClose" id="menu">
             <div class="close">
                 <span onclick="switchMenu()" class="iconify" data-icon="heroicons-outline:x" data-height="35" style="color: white; margin-bottom: 20px;"></span>
             </div>
 
-            <a href="../index.html">
+            <a href="/index.html">
                 <span class="iconify" data-icon="bx:home-alt" data-height="35"></span>
                 <h2>Home</h2>
             </a>
 
-            <a>
+            <a href="/News/index.html">
                 <span class="iconify" data-icon="fluent:news-24-regular" data-height="35"></span>
                 <h2>Notícias</h2>
             </a>
+            
+            <a href="/AboutUs/index.html">
+                <span class="iconify" data-icon="fluent-emoji-high-contrast:handshake" data-height="35"></span>
+                <h2>Sobre Nós</h2>
+            </a>
 
-            <a href="../LocalsAndSites/index.html">
+            <a href="/LocalsAndSites/index.html">
                 <span class="iconify" data-icon="akar-icons:location" data-height="35"></span>
-                <h2>Locais e Sites</h2>
+                <h2>Ong`s</h2>
             </a>
 
-            <a href="../Settings/index.html">
-                <span class="iconify" data-icon="ci:settings" data-height="35"></span>
-                <h2>Configurações</h2>
-            </a>
+            <div class="theme">
+                <div class="switch__container">
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+                    <label for="switch-shadow"></label>
+                </div>
+                <h2>Tema Escuro</h2>
+            </div>
         </nav>
     </header>
     
@@ -75,7 +85,7 @@
                                     <img src="https://th.bing.com/th/id/OIP.kC9HmNpKNtiPf_l8g_QLJwHaE8?pid=ImgDet&rs=1" alt="img_agricultura">
                                     <h2>Shopping Garden dá dicas do que plantar no inverno</h2>
                                     <p>Em  jornaltribuna.com.br - Consultado em 21/08/2021</p>
-                                    <a>Ver Mais</a>
+                                    <a>Ver mais</a>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +111,7 @@
                                     <img src="https://th.bing.com/th/id/OIP.kC9HmNpKNtiPf_l8g_QLJwHaE8?pid=ImgDet&rs=1" alt="img_agricultura">
                                     <h2>Shopping Garden dá dicas do que plantar no inverno</h2>
                                     <p>Em  jornaltribuna.com.br - Consultado em 21/08/2021</p>
-                                    <a>Ver Mais</a>
+                                    <a>Ver mais</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +137,7 @@
                                     <img src="https://th.bing.com/th/id/OIP.kC9HmNpKNtiPf_l8g_QLJwHaE8?pid=ImgDet&rs=1" alt="img_agricultura">
                                     <h2>Shopping Garden dá dicas do que plantar no inverno</h2>
                                     <p>Em  jornaltribuna.com.br - Consultado em 21/08/2021</p>
-                                    <a>Ver Mais</a>
+                                    <a>Ver mais</a>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +157,7 @@
                         <img src="https://th.bing.com/th/id/OIP.kC9HmNpKNtiPf_l8g_QLJwHaE8?pid=ImgDet&rs=1" alt="img_agricultura">
                         <h2>Shopping Garden dá dicas do que plantar no inverno</h2>
                         <p>Em  jornaltribuna.com.br - Consultado em 21/08/2021</p>
-                        <a>Ver Mais</a>
+                        <a>Ver mais</a>
                     </div>
                 </div>
             </div>
@@ -158,19 +168,19 @@
     <footer class="Rodape">
         <div class="container-rodape">
             <div class="sobre-nos">
-                <h2>Sobre Nós</h2>
+                <h2>Nosso objetivo</h2>
                 <div class="linha-vertical"></div>
                 <p>O Green Point tem o objetivo de diminuir a fome no MUNDO com diversas ações, uma delas é promover uma conexão entre possíveis doadores e pessoas que necessitam de doações!!</p>
             </div>
             <div class="panellinks">
                 <div class="links">
                     <div class="linksone">
-                        <li><a href="https://forms.gle/KUFgtegduuvEJf8JA" target="_blank"><i class="fa-brands fa-rocketchat"></i></a></li>
-                        <li><a href="mailto: org.greenpoint@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="/Contribua/index.html"><i class="fa-solid fa-hand-holding-medical"></i></a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-qrcode"></i></a></li>
                     </div>
                     <div class="linkstwo">
-                        <li><a><i class="fa-solid fa-qrcode"></i></a></li>
-                        <li><a><i class="fa-solid fa-link"></i></a></li>
+                        <li><a href="mailto: org.greenpoint@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="/QandA/index.html"><i class="fa-regular fa-circle-question"></i></a></li>
                     </div>
                 </div>
             </div>
@@ -181,6 +191,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script src="../js/darkmode.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
