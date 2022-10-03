@@ -404,3 +404,62 @@ footer{
         max-width: 30%;
     }
 }
+
+
+.Title{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.Title h1{
+    margin-top: 2rem;
+    color: var(--green);
+    font-size: 3rem;
+}
+.Title p{
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.Questions{
+    width: 90%;
+    margin: auto;
+}
+
+
+.QAndA{
+    margin-bottom: 1.5rem;
+}
+.line{
+    border: 1px solid #03A045;
+    border-radius: 1rem;
+    transition: .5s ease;
+}
+.TextQandA{
+    cursor: pointer;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+.TextQandA i{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+.TextQandA p{
+    color:var(--dark-blue);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.Answer{
+    margin: auto;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+.Answer p{
+    color:var(--dark-blue);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
