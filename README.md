@@ -15,6 +15,7 @@ O objetivo do projeto é divulgar e facilitar a comunicação entre instituiçõ
 ## Autores
 
 - [@nicollasisaac](https://www.github.com/nicollasisaac)
+- [@sarahmacedo](macedooliveira.sarah@gmail.com)
 - [@alicechinoque](https://www.linkedin.com/in/alice-chinoque-377b661b6/)
 - [@isabella-gomes](https://www.linkedin.com/in/isabella-gomes-a7665a237/)
 - [@diegodesousa-11](https://www.github.com/@diegodesousa-11)
