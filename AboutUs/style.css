@@ -124,6 +124,43 @@ header > div img {
     font-weight: 300;
 }
 
+/*Conteúdo*/
+#AboutUs h1 {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--green);
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.Project {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.text {
+    width: 50%;
+}
+
+.text h2 {
+    margin-left: 2rem;
+    color: var(--green);
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.text p {
+    margin-left: 2rem;
+    color: var(--dark-gray);
+}
+
+.text input {
+    border: 1px solid transparent;
+    border-color: var(--green);
+}
+
+
+
 /* Estilo iOS */
 .switch__container {
     margin-top: 0.4rem;
