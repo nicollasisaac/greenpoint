@@ -456,6 +456,7 @@ footer{
 .Answer{
     margin: auto;
     width: 95%;
+    display: block;
     margin-bottom: 1rem;
 }
 .Answer p{
