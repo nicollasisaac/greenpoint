@@ -37,6 +37,17 @@ header > div img {
     margin-top: 1.8rem;
 }
 
+/*==== Scroll Personalizado ====*/
+::-webkit-scrollbar{
+	width: .5vw;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, var(--green), var(--light-gray));
+	border-radius: 6px;
+	transition: .6s ease-in;
+}
+
 /* Menu */ 
 
 .menu {
@@ -259,6 +270,7 @@ footer{
     background: var(--light-gray);
     position: relative;
     justify-content: center;
+    list-style: none;
 }
 
 .container-rodape{
@@ -406,12 +418,15 @@ footer{
 
 /* main */
 
+.title{
+    margin-top: 5rem;
+}
 .title h1{
-    margin-top: 3.5rem;
     color: var(--green);
     font-size: 3rem;
     width: 90%;
     margin: auto;
+    margin-bottom: 1rem;
 }
 .title p{
     width: 90%;
@@ -424,7 +439,6 @@ footer{
     width: 90%;
     margin: auto;
     display: flex;
-    min-height: 60vh;
     justify-content: space-between;
 }
 
@@ -454,4 +468,61 @@ footer{
 
 .text-howdonate p{
     margin-bottom: 2.5rem;
+}
+
+#donate2{
+    width: 90%;
+    margin: auto;
+    min-height: 40vh;
+    margin-bottom: 3rem;
+}
+
+#donate2 h2{
+    color: var(--green);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#donate2 p{
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+}
+
+.content-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-qrcode{
+    margin-top: 3.2em;
+}
+.img-machine{
+    display: inline-grid;
+}
+
+.img-machine input{
+    width: auto;
+    margin-top: 1rem;
+    background: var(--green);
+    color: var(--white);
+    border: 0;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.img-machine input:hover{
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.img-qrcode p{
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.img-qrcode a{
+    color: var(--green);
 }
