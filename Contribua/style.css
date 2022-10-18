@@ -419,19 +419,20 @@ footer{
 /* main */
 
 .title{
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 .title h1{
+    margin-top: 2rem;
+    text-align: center;
     color: var(--green);
     font-size: 3rem;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 1rem;
+    font-weight: 1000;
 }
 .title p{
     width: 90%;
     margin: auto;
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
     color: var(--dark-blue);
 }
 
@@ -444,11 +445,14 @@ footer{
 
 .text-howdonate{
     width: 50%;
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
 }
 
 #donate1 img{
-    height: 10%;
+    max-width:700px;
+    max-height:500px;
+    width: auto;
+    height: auto;
 }
 
 .text-howdonate h2{
@@ -459,20 +463,17 @@ footer{
 
 .text-howdonate p, li{
     color: var(--dark-blue);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .text-howdonate li{
     margin-top: 1rem;
 }
 
-.text-howdonate p{
-    margin-bottom: 2.5rem;
-}
-
 #donate2{
     width: 90%;
     margin: auto;
+    text-align: center;
     min-height: 40vh;
     margin-bottom: 3rem;
 }
@@ -480,22 +481,33 @@ footer{
 #donate2 h2{
     color: var(--green);
     font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#donate2 p{
-    color: var(--dark-blue);
-    font-size: 1.5rem;
 }
 
 .content-img{
     display: flex;
+    width: 85%;
+    margin: auto;
     justify-content: space-between;
 }
 
 .img-qrcode{
     margin-top: 3.2em;
 }
+
+.img-qrcode img{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.img-machine img{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
 .img-machine{
     display: inline-grid;
 }
@@ -508,21 +520,37 @@ footer{
     border: 0;
     padding: 1rem;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: auto;
 }
 
 .img-machine input:hover{
     background-color: var(--dark-blue);
     cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.company {
+    width: 20%;
+    margin-top: 9rem;
+    color: var(--dark-blue);
+    font-size: 1rem;
+    text-align: center;
 }
 
 .img-qrcode p{
-    margin-top: 3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
     text-align: center;
     color: var(--dark-blue);
 }
 
 .img-qrcode a{
     color: var(--green);
+}
+
+.paragrafy{
+    color: var(--dark-blue);
+    font-size: 1rem;
+    margin-top: 1rem;
 }
