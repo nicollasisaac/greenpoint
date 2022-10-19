@@ -464,6 +464,7 @@ footer{
 .text-howdonate p, li{
     color: var(--dark-blue);
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .text-howdonate li{
@@ -473,8 +474,7 @@ footer{
 #donate2{
     width: 90%;
     margin: auto;
-    text-align: center;
-    min-height: 40vh;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -483,70 +483,59 @@ footer{
     font-size: 2rem;
 }
 
+#donate2 p{
+    color: var(--dark-blue);
+}
+
 .content-img{
     display: flex;
-    width: 85%;
     margin: auto;
     justify-content: space-between;
 }
 
-.img-qrcode{
-    margin-top: 3.2em;
+.machine{
+    min-width: 50%;
 }
 
-.img-qrcode img{
-    max-width:400px;
-    max-height:300px;
+.machine img{
+    max-width:500px;
+    max-height:400px;
     width: auto;
     height: auto;
 }
 
-.img-machine img{
-    max-width:400px;
-    max-height:300px;
-    width: auto;
-    height: auto;
+.conteudo-text{
+    top: 50%;
+    margin: auto;
+    text-align: center;
 }
 
-.img-machine{
-    display: inline-grid;
+.conteudo-text p{
+    color: var(--dark-blue);
+    margin: auto;
+    width: 80%;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.img-machine input{
+.conteudo-text input{
     width: auto;
-    margin-top: 1rem;
+}
+
+input{
     background: var(--green);
     color: var(--white);
     border: 0;
     padding: 1rem;
+    text-align: center;
     border-radius: 5px;
     font-size: 1rem;
-    margin: auto;
 }
 
-.img-machine input:hover{
+input:hover{
     background-color: var(--dark-blue);
     cursor: pointer;
     transition: .2s ease-in;
-}
-
-.company {
-    width: 20%;
-    margin-top: 9rem;
-    color: var(--dark-blue);
-    font-size: 1rem;
-    text-align: center;
-}
-
-.img-qrcode p{
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    color: var(--dark-blue);
-}
-
-.img-qrcode a{
-    color: var(--green);
 }
 
 .paragrafy{
