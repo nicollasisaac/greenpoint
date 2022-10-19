@@ -543,3 +543,37 @@ input:hover{
     font-size: 1rem;
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 991px){
+    #donate1{
+        margin: auto;
+        display: block;
+    }
+    .text-howdonate{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    #donate1 img{
+        display: none;
+    }
+
+
+    .content-img{
+        display: block;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .machine{
+        display: flex;
+        margin: auto;
+        min-width: 100%;
+        width: 100%;
+    }
+    .machine img{
+        max-width:auto;
+        max-height:auto;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}

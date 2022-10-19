@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>GreenPoint</title>
 </head>
 <body>
@@ -61,7 +62,7 @@
 
     <main>
         <div class="title">
-            <h1>Contribua</h1>
+            <h1 class="animate__animated animate__bounce">Contribua</h1>
             <p>Ajude o projeto a continuar!</p>
         </div>
 
@@ -80,7 +81,7 @@
               <a href="mailto: org.greenpoint@gmail.com"><input type="button" value="Entrar em contato"></a>
           </div>
         </div>
-        <img src="/img/donate1.png" alt="">
+        <img data-aos="zoom-out-left" src="/img/donate1.png" alt="">
        </section>
 
        <section id="donate2">
@@ -90,7 +91,7 @@
         </div>
         <div class="content-img">
             <div class="machine">
-                <img src="/img/imgmachine.png" alt="">
+                <img  data-aos="flip-left" src="/img/imgmachine.png" alt="">
             </div>
             <div class="conteudo-text">
                 <p>Caso deseje fazer uma doação financeira, clique no botão abaixo e envie o valor através do PIX.</p>
@@ -134,6 +135,8 @@
 <script src="/Contribua/scriptDonate.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/darkmode.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/menu.js"></script>
+<script>AOS.init();</script>
 </html>
