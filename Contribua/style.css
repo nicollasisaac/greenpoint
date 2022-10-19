@@ -552,6 +552,10 @@ input:hover{
     .text-howdonate{
         width: 100%;
         margin-top: 2rem;
+        text-align: center;
+    }
+    .text-howdonate h2{
+        text-align: center;
     }
     #donate1 img{
         display: none;
@@ -575,5 +579,8 @@ input:hover{
         width: 100%;
         height: auto;
         margin: auto;
+    }
+    .titleDonate2{
+        text-align: center;
     }
 }
