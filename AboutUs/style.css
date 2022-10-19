@@ -38,6 +38,18 @@ header > div img {
     margin-top: 1.8rem;
 }
 
+/*==== Scroll Personalizado ====*/
+::-webkit-scrollbar{
+	width: .5vw;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, var(--green), var(--light-gray));
+	border-radius: 6px;
+	transition: .6s ease-in;
+}
+
+
 /* Menu */ 
 
 .menu {
@@ -130,15 +142,15 @@ main {
     margin: auto;
 }
 
-#AboutUs h1 {
-    margin-top: 2rem;
+#AboutUs h1, #Team h1 {
+    margin-top: 3rem;
     text-align: center;
     color: var(--green);
     font-size: 3rem;
     font-weight: 1000;
 }
 
-.Project, .Goal, .Contribute {
+.Project, .Goal, .Contribute{
     display: flex;
     margin-top: 3rem;
     justify-content: space-between;
@@ -208,6 +220,28 @@ main {
 
 .Goal .text input {
     width: 11.5rem;
+}
+
+.team1, .team2{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.dev-person {
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.dev-person img{
+    margin-bottom: 1rem;
+    max-width:250px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
 
 /* Estilo iOS */

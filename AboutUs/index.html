@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>GreenPoint</title>
 </head>
 <body>
@@ -66,16 +67,16 @@
                     <div class="text">
                        <h2>O Projeto</h2>
                        <p>O GreenPoint é um projeto sem fins lucrativos, que visa reduzir problemas alimentares da população residente, principalmente, nos bairros atendidos pelo CRAS Trianon e em Taboão da Serra.</p>
-                       <input type="button" value="Objetivos"></input> 
+                        <a href="#Goal"><input type="button" value="Objetivos"></input></a>
                     </div>
-                    <img src="/img/World-AboutUs.png" alt="Imagem ilustrativa">
+                    <img src="/img/World-AboutUs.png" alt="Imagem ilustrativa" data-aos="fade-up">
                 </div>
-                <div class="Goal">
-                    <img src="/img/Rocket-AboutUs.png" alt="Imagem ilustrativa">
+                <div class="Goal" id="Goal">
+                    <img src="/img/Rocket-AboutUs.png" alt="Imagem ilustrativa" data-aos="fade-up">
                     <div class="text">
                         <h2>Nosso Objetivo</h2>
                         <p>O nosso objetivo é divulgar e facilitar a comunicação entre instituições de distribuição de comida, possíveis doadores e pessoas que necessitam dessa assistência, contribuindo para a redução da fome.</p>
-                        <input type="button"  value="Ficou alguma dúvida?"></input> 
+                         <a href="/QandA/index.html"><input type="button"  value="Ficou alguma dúvida?"></input></a> 
                      </div>
                 </div>
                 <div class="Contribute">
@@ -84,12 +85,40 @@
                         <p>Cerca de 125,2 milhões de brasileiros convivem com algum grau de insegurança alimentar. Precisamos mudar esta realidade. Sua doação ajuda no combate desse problema e contribui para que o projeto continue! </p>
                         <a href="/Contribua/index.html"><input type="button"  value="Contribua"></input></a>
                     </div>
-                    <img src="/img/Money-AboutUs.png" alt="Imagem ilustrativa">
+                    <img src="/img/Money-AboutUs.png" alt="Imagem ilustrativa" data-aos="fade-up">
                 </div>
-       </section>
-       <section id="Team">
-
-       </section>
+        </section>
+        <section id="Team">
+            <h1>Time que torna a luta contra a fome possível</h1>
+                <div class="team1">
+                    <div class="dev-person">
+                        <img src="/img/Avatar-AboutUs.png" alt="Imagem ilustrativa">
+                        <p>Alice Chinoque</p>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/img/Avatar-AboutUs.png" alt="Imagem ilustrativa">
+                        <p>Carolina Fernandes</p>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/img/Avatar-AboutUs.png" alt="Imagem ilustrativa">
+                        <p>Diego Sousa</p>
+                    </div>
+                </div>
+                <div class="team2">
+                    <div class="dev-person">
+                        <img src="/img/Avatar-AboutUs.png" alt="Imagem ilustrativa">
+                        <p>Isabella Gomes</p>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/img/Avatar-AboutUs.png" alt="Imagem ilustrativa">
+                        <p>Nicollas Isaac</p>
+                    </div>
+                    <div class="dev-person">
+                        <img src="/img/Avatar-AboutUs.png" alt="Imagem ilustrativa">
+                        <p>Sarah Macedo</p>
+                    </div>
+                </div>
+        </section>
     </main>
     <footer class="Rodape">
         <div class="container-rodape">
@@ -123,4 +152,8 @@
 <script src="/js/darkmode.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/menu.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
