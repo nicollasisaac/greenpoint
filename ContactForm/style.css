@@ -137,9 +137,28 @@ header > div img {
     font-weight: 300;
 }
 
+/*Conteúdo*/
+main {
+    width: 90%;
+    margin: auto;
+}
 
+.content{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
 
+.form {
+    
+}
 
+.image img{
+    max-width:600px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
 
 /* Estilo iOS */
 .switch__container {
