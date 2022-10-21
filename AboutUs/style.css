@@ -229,19 +229,28 @@ main {
     text-align: center;
     color: var(--dark-blue);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2em;
 }
 
 .dev-person img{
     margin-bottom: 1rem;
-    max-width:250px;
-    max-height:150px;  
-    width: auto;
-    height: auto;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
     transition: .5s;
 }
 .dev-person img:hover{
     transform: scale(1.1);
+}
+
+.dev-person a:visited {
+    color: var(--dark-blue);
+}
+
+.dev-person a:hover{
+    color: var(--green);
+    transition: 0.2s ease-in;
 }
 
 @media screen and (max-width: 991px){
