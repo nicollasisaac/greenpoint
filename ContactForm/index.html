@@ -60,32 +60,32 @@
     </header>
 
     <main>
-        <h1>Formulário</h1>
+        <div class="title">
+            <h1>Formulário</h1>
             <p>Relate uma dúvida, sugestão, um problema ou erro do sistema.</p>
-            <div class="content">
-                <div class="form">
-                    <form action="https://formsubmit.co/alicechinoquesouza@gmail.com" method="POST">
-                        <div class="name">
-                            <p>Nome</p>
-                            <input type="text" name="Nome" placeholder="Insira seu nome" required>
-                        </div>
-                        <div class="email">
-                            <p>Email</p>
-                            <input type="email" name="Email" placeholder="Insira seu e-mail" required>
-                        </div>
-                        <div class="send">
-                            <p>Mensagem</p>
-                            <textarea name="message" id="message" rows="7" cols="15" placeholder="Escreva sua dúvida, problema, erro ou sugestão" required></textarea>
-                            <input type="submit" value="Enviar" onclick="msg()">
-                        </div>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/ContactForm/index.html">
-                    </form>
+        </div>
+        <div class="content">
+            <form action="https://formsubmit.co/org.greenpoint@gmail.com" method="POST">
+                <div class="name">
+                    <p>Nome</p>
+                    <input type="text" name="Nome" placeholder="Insira seu nome" required>
                 </div>
-                <div class="image">
-                    <img src="/img/Woman-Form.png" alt="Imagem Ilustrativa">
+                <div class="email">
+                    <p>Email</p>
+                    <input type="email" name="Email" placeholder="Insira seu e-mail" required>
                 </div>
-            </div>
+                <div class="send">
+                    <p>Mensagem</p>
+                    <textarea name="message" id="message" rows="7" cols="15" placeholder="Escreva sua dúvida, problema, erro ou sugestão" required></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Enviar" onclick="msg()">
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/ContactForm/index.html">
+            </form>
+            <img class="image" src="/img/Woman-Form.png" alt="Imagem Ilustrativa">
+        </div>
     </main>
 
     <footer class="Rodape">
