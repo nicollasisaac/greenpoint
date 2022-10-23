@@ -13,6 +13,18 @@ body {
     background: var(--white);
 }
 
+/*==== Scroll Personalizado ====*/
+::-webkit-scrollbar{
+	width: .5vw;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, var(--green), var(--light-gray));
+	border-radius: 6px;
+	transition: .6s ease-in;
+}
+
+
 header {
     display: flex;
     align-items: center;
@@ -405,29 +417,33 @@ footer{
     }
 }
 
-
-.Title{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 2rem;
+.title{
+    margin-top: 2.5rem;
 }
-.Title h1{
+.title h1{
     margin-top: 2rem;
+    text-align: center;
     color: var(--green);
     font-size: 3rem;
+    font-weight: 1000;
 }
-.Title p{
-    color: var(--dark-blue);
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-.Questions{
+.title p{
     width: 90%;
     margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
 }
 
 
-.QAndA{
+
+.Questions{
+    margin: auto;
+}
+.questionItem{
+    width: 90%;
+    margin: auto;
     margin-bottom: 1.5rem;
 }
 .line{
@@ -463,4 +479,18 @@ footer{
     color:var(--dark-blue);
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+.linkForm{
+    margin-top: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.linkForm p{
+    color: var(--dark-blue);
+}
+
+.linkForm a{
+    color: var(--green);
 }

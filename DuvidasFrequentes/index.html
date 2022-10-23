@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/QandA/style.css">
+    <link rel="stylesheet" href="/DuvidasFrequentes/style.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -60,33 +60,26 @@
     </header>
 
     <main>
-    <div class="Title">
-        <h1 class="animate__animated animate__bounce">Dúvidas Frequentes</h1>
-        <p>Caso não encontre sua dúvida abaixo, entre em contato conosco!</p>
-    </div>
-    <div class="Questions">
-        <div class="QAndA" onclick="Answer(0)">
-            <div class="line"></div>
-            <div class="TextQandA">
-                <p class="question"></p>
-                <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="Answer"><p></p></div>
-            <div class="line"></div>
+        <div class="title">
+            <h1 class="animate__animated animate__bounce">Dúvidas Frequentes</h1>
+            <p>Caso não encontre sua dúvida abaixo, entre em contato conosco!</p>
         </div>
-
-        <div class="QAndA" onclick="Answer(1)">
-            <div class="line"></div>
-            <div class="TextQandA">
-                <p class="question"></p>
-                <i class="fa-solid fa-plus"></i>
+        <section id="Questions" >
+            <div id="questionItem" class="questionItem">
+                <div class="QAndA" onclick="showAnwer(0)">
+                    <div class="line"></div>
+                    <div class="TextQandA">
+                        <p class="question"></p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="Answer"><p></p></div>
+                    <div class="line"></div>
+                </div>
             </div>
-            <div class="Answer">
-                <p>O greenPoint is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-            </div>
-            <div class="line"></div>
+        </section>
+        <div class="linkForm">
+            <p>Se sua dúvida não foi respondida <a href="/ContactForm/index.html">clique aqui.</a></p>
         </div>
-    </div>
     </main>
     
     <footer class="Rodape">
@@ -104,7 +97,7 @@
                     </div>
                     <div class="linkstwo">
                         <li><a href="mailto: org.greenpoint@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-                        <li><a href="/QandA/index.html"><i class="fa-regular fa-circle-question"></i></a></li>
+                        <li><a href="/DuvidasFrequentes/index.html"><i class="fa-regular fa-circle-question"></i></a></li>
                     </div>
                 </div>
             </div>
@@ -117,9 +110,9 @@
     </footer>
 
 </body>
+<script src="/DuvidasFrequentes/answer.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/darkmode.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/menu.js"></script>
-<script src="/QandA/answer.js"></script>
 </html>
