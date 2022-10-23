@@ -7,23 +7,12 @@
     user-select: none;
     list-style: none;
     text-decoration: none;
+    scroll-behavior:smooth;
 }
 
 body {
     background: var(--white);
 }
-
-/*==== Scroll Personalizado ====*/
-::-webkit-scrollbar{
-	width: .5vw;
-}
-
-::-webkit-scrollbar-thumb{
-	background: linear-gradient(transparent, var(--green), var(--light-gray));
-	border-radius: 6px;
-	transition: .6s ease-in;
-}
-
 
 header {
     display: flex;
@@ -49,6 +38,18 @@ header > div img {
     width: 90%;
     margin-top: 1.8rem;
 }
+
+/*==== Scroll Personalizado ====*/
+::-webkit-scrollbar{
+	width: .5vw;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, var(--green), var(--light-gray));
+	border-radius: 6px;
+	transition: .6s ease-in;
+}
+
 
 /* Menu */ 
 
@@ -417,6 +418,8 @@ footer{
     }
 }
 
+/* main */
+
 .title{
     margin-top: 2.5rem;
 }
@@ -433,64 +436,37 @@ footer{
     text-align: center;
     font-size: 1rem;
     color: var(--dark-blue);
-    margin-bottom: 2rem;
 }
 
-
-
-.Questions{
-    margin: auto;
-}
-.questionItem{
+#termos{
     width: 90%;
     margin: auto;
-    margin-bottom: 1.5rem;
+    text-align: justify;
+    padding-bottom: 2.5rem;
 }
-.line{
-    border: 1px solid #03A045;
-    border-radius: 1rem;
-    transition: .5s ease;
-}
-.TextQandA{
-    cursor: pointer;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    width: 95%;
-    justify-content: space-between;
-}
-.TextQandA i{
+
+.aba h2{
     color: var(--green);
-    font-size: 1.5rem;
-}
-.TextQandA p{
-    color:var(--dark-blue);
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-.Answer{
-    margin: auto;
-    width: 95%;
-    display: block;
-    margin-bottom: 1rem;
-}
-.Answer p{
-    color:var(--dark-blue);
-    font-size: 0.9rem;
-    font-weight: 400;
+    margin-top: 2rem;
 }
 
-.linkForm{
-    margin-top: 2.5rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.linkForm p{
+.aba span{
+    font-weight: bold;
     color: var(--dark-blue);
 }
 
-.linkForm a{
+.aba li{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: var(--dark-blue);
+}
+
+.linkAnswer{
+    padding-bottom: 3rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.linkAnswer a{
     color: var(--green);
 }
