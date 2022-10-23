@@ -7,13 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Contribua/style.css">
+    <link rel="stylesheet" href="/RegisterForm/style.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <title>GreenPoint</title>
+    <title>Formulário</title>
 </head>
 <body>
     <header>
@@ -62,47 +61,45 @@
 
     <main>
         <div class="title">
-            <h1 class="animate__animated animate__bounce">Contribua</h1>
-            <p>Ajude o projeto a continuar!</p>
+            <h1>Formulário</h1>
+            <p>Relate uma dúvida, sugestão, um problema ou erro do sistema.</p>
         </div>
-
-       <section id="donate1">
-        <div class="text-howdonate">
-            <h2>Como  posso ajudar o projeto?</h2>
-            <p>Através de sua doação que auxilia no combate à insegurança alimentar de famílias carentes e contribui para que o projeto continue! 
-
-              Ajude o projeto por meio de: 
-               <li>doações de alimentos no nosso aplicativo</li>
-               <li>contribuições no PIX</li>
-               <li>divulgação do projeto</li> 
-            </p>
-            <p>Caso seja uma instituição e queira entrar em contato conosco, clique no botão abaixo. Assim, você pode dedicar qualquer quantia para o GreenPoint se manter ativo.</p>
-          <div class="bnt-text">
-              <a href="/RegisterForm/index.html"><input type="button" value="Entrar em contato"></a>
-          </div>
-        </div>
-        <img data-aos="zoom-out-left" src="/img/donate1.png" alt="">
-       </section>
-
-       <section id="donate2">
-        <div class="titleDonate2">
-            <h2>Nosso PIX</h2>
-            <p>Doe por nossa chave PIX: org.greenpoint@gmail.com</p>
-        </div>
-        <div class="content-img">
-            <div class="machine">
-                <img  data-aos="flip-left" src="/img/imgmachine.png" alt="">
+        <div class="content">
+            <div class="forms">
+                <form action="https://formsubmit.co/org.greenpoint@gmail.com" method="POST">
+                    <div class="name">
+                        <p>Nome da empresa ou ONG</p>
+                        <input type="text" name="Nome" placeholder="Insira seu nome" required>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <input type="email" name="Email" placeholder="Insira seu e-mail" required>
+                    </div>
+                    <div class="cnpj">
+                        <p>CNPJ</p>
+                        <input type="number" name="Email" placeholder="Insira seu e-mail" required>
+                    </div>
+                    <div class="contact">
+                        <p>Endereço ou site de contato</p>
+                        <input type="number" name="Email" placeholder="Insira seu e-mail" required>
+                    </div>
+                    <div class="send">
+                        <p>Mensagem</p>
+                        <textarea name="message" id="message" rows="7" cols="15" placeholder="Escreva sua dúvida, problema, erro ou sugestão" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Enviar" onclick="msg()">
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/ContactForm/index.html">
+                </form>
             </div>
-            <div class="conteudo-text">
-                <p>Caso deseje fazer uma doação financeira, clique no botão abaixo e envie o valor através do PIX.</p>
-                <input type="button" onclick="copy()" value="Copie nossa chave PIX">
-            </input>
+            <div class="images">
+                <img class="image1" src="/img/ilustration-form.png" alt="Imagem Ilustrativa">
+                <img class="image2" src="/img/man-form.png" alt="Imagem Ilustrativa">
+            </div>
         </div>
-       </section>
     </main>
-
-
-
 
     <footer class="Rodape">
         <div class="container-rodape">
@@ -130,13 +127,14 @@
             </div>
         </div>
     </footer>
-
 </body>
-<script src="/Contribua/scriptDonate.js"></script>
+<script src="/ContactForm/contactform.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/darkmode.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <script src="/js/menu.js"></script>
-<script>AOS.init();</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
