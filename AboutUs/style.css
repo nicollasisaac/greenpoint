@@ -244,7 +244,11 @@ main {
     transform: scale(1.1);
 }
 
-#Team a:visited {
+.team1 a:visited {
+    color: var(--dark-blue);
+}
+
+.team2 a:visited {
     color: var(--dark-blue);
 }
 

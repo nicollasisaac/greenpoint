@@ -64,41 +64,34 @@
             <h1>Formulário</h1>
             <p>Relate uma dúvida, sugestão, um problema ou erro do sistema.</p>
         </div>
-        <div class="content">
-            <div class="forms">
-                <form action="https://formsubmit.co/org.greenpoint@gmail.com" method="POST">
-                    <div class="name">
-                        <p>Nome da empresa ou ONG</p>
-                        <input type="text" name="Nome" placeholder="Insira seu nome" required>
-                    </div>
-                    <div class="email">
-                        <p>Email</p>
-                        <input type="email" name="Email" placeholder="Insira seu e-mail" required>
-                    </div>
-                    <div class="cnpj">
-                        <p>CNPJ</p>
-                        <input type="number" name="Email" placeholder="Insira seu e-mail" required>
-                    </div>
-                    <div class="contact">
-                        <p>Endereço ou site de contato</p>
-                        <input type="number" name="Email" placeholder="Insira seu e-mail" required>
-                    </div>
-                    <div class="send">
-                        <p>Mensagem</p>
-                        <textarea name="message" id="message" rows="7" cols="15" placeholder="Escreva sua dúvida, problema, erro ou sugestão" required></textarea>
-                    </div>
-                    <div class="btn">
-                        <input type="submit" value="Enviar" onclick="msg()">
-                    </div>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/ContactForm/index.html">
-                </form>
+        
+        <form action="https://formsubmit.co/org.greenpoint@gmail.com" method="POST">
+            <div class="name">
+                <p>Nome da empresa ou ONG</p>
+                <input type="text" name="Nome" placeholder="Insira seu nome" required>
             </div>
-            <div class="images">
-                <img class="image1" src="/img/ilustration-form.png" alt="Imagem Ilustrativa">
-                <img class="image2" src="/img/man-form.png" alt="Imagem Ilustrativa">
+            <div class="email">
+                <p>Email</p>
+                <input type="email" name="Email" placeholder="Insira seu e-mail" required>
             </div>
-        </div>
+            <div class="cnpj">
+                <p>CNPJ</p>
+                <input type="number" name="Cnpj" placeholder="Insira o CNPJ" required>
+            </div>
+            <div class="contact">
+                <p>Endereço ou site de contato</p>
+                <input type="text" name="Contact" placeholder="Insira seu endereço ou site de contato" required>
+            </div>
+            <div class="send">
+                <p>Mensagem</p>
+                <textarea name="message" id="message" rows="7" cols="15" placeholder="Conte um pouco sobre o seu projeto e sobre sua empresa/ong" required></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Enviar" onclick="msg()">
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/RegisterForm/index.html">
+        </form>
     </main>
 
     <footer class="Rodape">

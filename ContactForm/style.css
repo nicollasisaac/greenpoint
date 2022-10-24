@@ -461,23 +461,35 @@ footer{
     text-align: center;
     font-size: 1rem;
     color: var(--dark-blue);
+    margin-bottom: 2rem;
 }
+
 .content{
     display: flex;
-    width: 90%;
+    width: 50%;
     margin: auto;
     justify-content: space-between;
-    height: 70vh;
+    height: auto;
 }
+
+.content img{
+    max-width: 500px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+}
+
 form{
-    width: 30%;
+    min-width: 40%;
     margin: auto;
 }
+
 form p{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
     color: var(--dark-blue);
 }
+
 form input, textarea{
     border: 1px solid var(--green);
     border-radius: 5px;
@@ -487,6 +499,7 @@ form input, textarea{
     outline: 0;
     margin-bottom: 1rem;
 } 
+
 input::placeholder, textarea::placeholder {
     color: var(--dark-blue);
 }
@@ -499,12 +512,14 @@ input::placeholder, textarea::placeholder {
 .btn{
     text-align: center;
 }
+
 .btn input{
     min-width: 30%;
     cursor: pointer;
     background-color: var(--green);
     color: var(--white);
 }
+
 .btn input:hover{
     background: var(--dark-blue);
     transition: .2s ease;
