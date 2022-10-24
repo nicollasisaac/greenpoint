@@ -582,3 +582,19 @@ input:hover{
         text-align: center;
     }
 }
+
+.linktermos {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.linktermos p{
+    text-align: center;
+}
+
+.linktermos a{
+    color: var(--green);
+}

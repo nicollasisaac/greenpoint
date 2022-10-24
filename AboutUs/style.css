@@ -228,7 +228,6 @@ main {
 .dev-person {
     text-align: center;
     color: var(--dark-blue);
-    font-weight: 600;
     font-size: 1.2em;
 }
 
@@ -301,6 +300,22 @@ main {
         justify-content: space-around;
         margin-bottom: 3rem;
     }
+}
+
+.linktermos {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.linktermos p{
+    text-align: center;
+}
+
+.linktermos a{
+    color: var(--green);
 }
 
 /* Estilo iOS */
