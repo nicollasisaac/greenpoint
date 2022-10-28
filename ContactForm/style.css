@@ -149,10 +149,6 @@ main {
     justify-content: space-around;
 }
 
-.form {
-    
-}
-
 .image img{
     max-width:600px;
     max-height:500px;
@@ -466,9 +462,8 @@ footer{
 
 .content{
     display: flex;
-    width: 50%;
-    margin: auto;
-    justify-content: space-between;
+    margin-top: 4rem;
+    justify-content: space-around;
     height: auto;
 }
 
@@ -479,9 +474,9 @@ footer{
     height: auto;
 }
 
-form{
-    min-width: 40%;
-    margin: auto;
+.form{
+    margin-top: 3rem;
+    width: 35%;
 }
 
 form p{

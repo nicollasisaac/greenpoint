@@ -243,11 +243,11 @@ main {
     transform: scale(1.1);
 }
 
-.team1 a:visited {
-    color: var(--dark-blue);
+.team1, .team2{
+    color: black;
 }
 
-.team2 a:visited {
+.team1 a:visited, .team2 a:visited {
     color: var(--dark-blue);
 }
 
