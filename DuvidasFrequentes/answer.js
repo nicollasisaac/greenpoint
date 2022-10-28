@@ -1,7 +1,7 @@
 let questions = [
     {
         id: 0,
-        question: "Tenho menos de 18 anos, posso usar o app?",
+        question: "Tenho menos de 18 anos, posso usar o aplicativo?",
         Answer: "O cadastro no aplicativo está disponível apenas para pessoas que tenham pelo menos 18 anos de idade. Porém, com auxílio de um responsável, é permitido a realização de doações para instituições por meio do nosso site."
     },
     {
@@ -51,6 +51,7 @@ questions.map((itemQuestion, index) => {
 
     itemsQuestions.id = "questionItem";
     itemsQuestions.querySelector(".TextQandA p").innerHTML = itemQuestion.question;
+    itemsQuestions.querySelector(".Answer p").innerHTML = itemQuestion.Answer;
     itemsQuestions.setAttribute("onclick", `showAnwer(${index})`);
 
     document.querySelector("#Questions").append(itemsQuestions);
@@ -59,21 +60,15 @@ questions.map((itemQuestion, index) => {
 document.getElementById("questionItem").parentNode.removeChild(document.getElementById("questionItem"));
 
 
+function showAnwer (numItem) {
+    let answerDocument = document.querySelectorAll(".Answer");
+    let emoji = document.querySelectorAll(".TextQandA i")
 
-
-
-
-var show = false;
-
-function showAnwer(index){
-    var answerVisible = document.querySelectorAll(".Answer");
-    
-    if(show == false){
-        answerVisible[index].style.visibility = "hidden";
-        show = true;
+    if(answerDocument[numItem].classList.contains("show")){
+        answerDocument[numItem].classList.replace('show', 'showOff');
+        emoji[numItem].classList.replace('fa-minus', 'fa-plus');
+    } else {
+        answerDocument[numItem].classList.replace('showOff', 'show');
+        emoji[numItem].classList.replace('fa-plus','fa-minus');
     }
-    else {
-        answerVisible[index].style.visibility = "visible";
-    }
-    
 }
