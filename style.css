@@ -254,7 +254,7 @@ main {
 }
 
 main div h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--green);
 }
 
@@ -265,6 +265,7 @@ main div h2{
 }
 
 main div p{
+    margin-bottom: 1.5rem;
     color: var(--dark-blue);
     width: 70%;
 }
@@ -326,6 +327,11 @@ main img{
 }
 
 @media screen and (max-width: 900px) {
+    main div h1 {
+        font-size: 3rem;
+        color: var(--green);
+    }    
+
     .TextInfo{
         padding-inline:5vw ;
         width: 100%;
