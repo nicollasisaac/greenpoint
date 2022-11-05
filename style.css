@@ -300,7 +300,7 @@ main .buttons button{
     color: var(--green);
 }
 
-main .buttons a{
+main .buttons .saiba-mais{
     cursor: pointer;
     text-decoration: none;
 
