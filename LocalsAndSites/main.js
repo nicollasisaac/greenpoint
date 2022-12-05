@@ -6,8 +6,8 @@ Places.map((itemlocal, index) => {
     itemsLocal.querySelector(".localtxt p").innerHTML = "Contato: " + itemlocal.phoneNumber;
     itemsLocal.querySelector(".buttonlocal").setAttribute("onclick", `switchVerMais(${index})`);
     itemsLocal.querySelector(".closeMenu .icon").setAttribute("onclick", `switchVerMais(${index})`);
-    itemsLocal.querySelector(".showlinks .share").setAttribute("onclick", 
-    `{navigator.clipboard.writeText('Nome: ${itemlocal.title} | Site: ${itemlocal.link} | Local: ${itemlocal.address} - ${itemlocal.state} | Telefone: ${itemlocal.phoneNumber}')}`)
+    itemsLocal.querySelector(".showlinks").setAttribute("onclick", 
+    'alertCopy()')
 
     if(itemlocal.address)
     {
@@ -29,6 +29,14 @@ Places.map((itemlocal, index) => {
     
     document.querySelector("#Local").append(itemsLocal);
 })
+
+$(".copy").click(function () {
+    alert("Informações copiadas com sucesso!");
+});
+
+function alertCopy(){
+    {navigator.clipboard.writeText('Nome: ${itemlocal.title} | Site: ${itemlocal.link} | Local: ${itemlocal.address} - ${itemlocal.state} | Telefone: ${itemlocal.phoneNumber}')}
+}
 
 document.getElementById("localandsite_model").parentNode.removeChild(document.getElementById("localandsite_model"));
 
