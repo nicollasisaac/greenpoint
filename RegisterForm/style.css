@@ -204,10 +204,10 @@ input::placeholder, textarea::placeholder {
 }
 
 .btn input{
-    min-width: 20%;
+    max-width: 30%;
     cursor: pointer;
     background-color: var(--green);
-    color: var(--dark-blue);
+    color: var(--white);
 }
 
 .btn input:hover{

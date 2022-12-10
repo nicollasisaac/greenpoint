@@ -275,6 +275,7 @@ header > div img {
     font-weight: 700;
     font-size: 3rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 h1, h3{
@@ -624,6 +625,10 @@ footer{
 
 .contate-nos p{
     max-width: 250px;
+}
+
+.text-title{
+    text-align: center;
 }
 
 @media screen and (max-width: 991px){
