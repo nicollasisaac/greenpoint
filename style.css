@@ -54,6 +54,7 @@ header > div img {
 
     filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 0.199));
     border-radius: 15px;
+    z-index: 10000;
     background-color: var(--green);
 
     transition: .5s;
